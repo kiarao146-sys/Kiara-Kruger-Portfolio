@@ -24,6 +24,13 @@
   <div class="cursor-ring"></div>
 </div>
 
+<!-- interactive background grid: brightens into a spotlight around the cursor -->
+<div class="grid-field" id="gridField" aria-hidden="true">
+  <div class="grid-field__base"></div>
+  <div class="grid-field__light"></div>
+  <div class="grid-field__glow"></div>
+</div>
+
 <!-- ============ HEADER ============ -->
 <header class="site-header" id="siteHeader">
   <div class="container header-inner">
@@ -144,11 +151,51 @@
     </div>
   </section>
 
-  <!-- ============ ABOUT ============ -->
-  <section class="about" id="about">
+  <!-- ============ ABOUT ME (personal) ============ -->
+  <section class="profile" id="about">
+    <div class="container profile-grid">
+      <div class="profile-side" data-reveal>
+        <div class="profile-photo" aria-hidden="true"><span>KK</span></div>
+        <ul class="profile-facts">
+          <li><span>Based in</span>Amsterdam, NL</li>
+          <li><span>Studied</span>Communication &amp; Multimedia Design</li>
+          <li><span>Speaks</span>English, Dutch</li>
+        </ul>
+      </div>
+
+      <div class="profile-body">
+        <span class="eyebrow">About me</span>
+        <h2 class="section-title" style="margin-bottom:28px;">A little more about me.</h2>
+
+        <!-- Personal bio — edit this paragraph freely -->
+        <p class="about-lead" data-reveal>
+          When I'm not designing, you'll probably find me exploring Amsterdam by bike,
+          trying out a new coffee spot, or getting lost in a sketchbook. I studied
+          Communication &amp; Multimedia Design and have been curious about how people
+          interact with technology ever since. I believe good design happens where
+          craft, empathy and a bit of curiosity meet — and I'm always up for a
+          conversation about any of the three.
+        </p>
+
+        <div class="profile-columns">
+          <div class="profile-col" data-reveal>
+            <h3 class="profile-col-title">Interests</h3>
+            <div class="interest-tags" id="interestTags"></div>
+          </div>
+          <div class="profile-col" data-reveal>
+            <h3 class="profile-col-title">Education</h3>
+            <div class="education-list" id="educationList"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ APPROACH ============ -->
+  <section class="about" id="approach">
     <div class="container about-grid">
       <div class="about-head" data-reveal>
-        <span class="eyebrow">Présentation</span>
+        <span class="eyebrow">How I work</span>
         <h2 class="section-title">
           Design that starts with the problem, not the pixels.
         </h2>
@@ -223,6 +270,20 @@
 
       <div class="work-list" id="workList">
         <!-- project cards injected by JS from content.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">What people say</span>
+        <h2 class="section-title">Kind words from people I've worked with.</h2>
+      </div>
+
+      <div class="testimonials-grid" id="testimonialsList">
+        <!-- testimonial cards injected by JS from content.js -->
       </div>
     </div>
   </section>

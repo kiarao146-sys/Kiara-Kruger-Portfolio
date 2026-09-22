@@ -48,3 +48,52 @@ const PROJECTS = [
     kind: "browser"
   }
 ];
+
+/*
+ * Replace with your real LinkedIn recommendations —
+ * quote, name, role/company and a photo (or leave initials for a placeholder).
+ */
+const TESTIMONIALS = [
+  {
+    quote:
+      "Kiara has a rare mix of strong craft and genuine curiosity about the user. She turned an ambiguous brief into a design system our whole team still relies on.",
+    name: "Sanne de Vries",
+    role: "Head of Product, Settly",
+    initials: "SV"
+  },
+  {
+    quote:
+      "One of the most thoughtful designers I've worked with — she asks the right questions early, and the final UI always feels obvious in hindsight, in the best way.",
+    name: "Tom Bakker",
+    role: "Engineering Lead, Northwind Bank",
+    initials: "TB"
+  },
+  {
+    quote:
+      "Kiara elevated our entire product surface. She's equally comfortable in research, systems thinking and pixel-level polish — a genuine senior designer.",
+    name: "Priya Nair",
+    role: "Founder, Lumen Studio",
+    initials: "PN"
+  }
+];
+
+/*
+ * Personal — edit freely. Shown in the About Me section.
+ */
+const EDUCATION = [
+  {
+    period: "2016 — 2020",
+    title: "BA Communication & Multimedia Design",
+    place: "Amsterdam University of Applied Sciences"
+  },
+  {
+    period: "2021",
+    title: "UX Design Certificate",
+    place: "Nielsen Norman Group"
+  }
+];
+
+const INTERESTS = [
+  "Photography", "Cycling", "Ceramics", "Travel",
+  "Specialty coffee", "Sketching", "Vinyl records", "Yoga"
+];

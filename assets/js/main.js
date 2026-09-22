@@ -75,6 +75,84 @@
     ).join("");
   }
 
+  /* ---------------- Render testimonials ---------------- */
+  function renderTestimonials() {
+    const list = document.getElementById("testimonialsList");
+    if (!list || typeof TESTIMONIALS === "undefined") return;
+
+    list.innerHTML = TESTIMONIALS.map(
+      (t) => `
+      <figure class="testimonial-card" data-reveal>
+        <svg class="testimonial-quote" width="28" height="22" viewBox="0 0 28 22" fill="none" aria-hidden="true">
+          <path d="M11.6 0.8C6.4 2.4 0 8 0 15.6c0 3.6 2.4 6 5.6 6 3.2 0 5.6-2.4 5.6-5.6 0-2.8-2-5.2-4.8-5.6.8-3.2 4-6.4 7.2-7.6L11.6.8ZM26.4.8C21.2 2.4 14.8 8 14.8 15.6c0 3.6 2.4 6 5.6 6 3.2 0 5.6-2.4 5.6-5.6 0-2.8-2-5.2-4.8-5.6.8-3.2 4-6.4 7.2-7.6L26.4.8Z" fill="currentColor"/>
+        </svg>
+        <blockquote>${t.quote}</blockquote>
+        <figcaption>
+          <span class="testimonial-avatar">${t.initials}</span>
+          <span>
+            <strong>${t.name}</strong>
+            <em>${t.role}</em>
+          </span>
+        </figcaption>
+      </figure>`
+    ).join("");
+  }
+
+  /* ---------------- Render interests + education (About Me) ---------------- */
+  function renderProfile() {
+    const tags = document.getElementById("interestTags");
+    if (tags && typeof INTERESTS !== "undefined") {
+      tags.innerHTML = INTERESTS.map((i) => `<span class="tag">${i}</span>`).join("");
+    }
+
+    const edu = document.getElementById("educationList");
+    if (edu && typeof EDUCATION !== "undefined") {
+      edu.innerHTML = EDUCATION.map(
+        (e) => `
+        <div class="education-item">
+          <span class="education-period">${e.period}</span>
+          <h4>${e.title}</h4>
+          <p>${e.place}</p>
+        </div>`
+      ).join("");
+    }
+  }
+
+  /* ---------------- Interactive grid field ---------------- */
+  function initGridField() {
+    const field = document.getElementById("gridField");
+    if (!field || window.matchMedia("(pointer: coarse)").matches) return;
+
+    let mx = window.innerWidth / 2;
+    let my = window.innerHeight / 2;
+    let gx = mx;
+    let gy = my;
+
+    field.style.setProperty("--mx", `${mx}px`);
+    field.style.setProperty("--my", `${my}px`);
+
+    window.addEventListener(
+      "mousemove",
+      (e) => {
+        mx = e.clientX;
+        my = e.clientY;
+        field.classList.add("is-active");
+      },
+      { passive: true }
+    );
+    window.addEventListener("mouseleave", () => field.classList.remove("is-active"));
+
+    const ease = reduceMotion ? 1 : 0.09;
+    function raf() {
+      gx += (mx - gx) * ease;
+      gy += (my - gy) * ease;
+      field.style.setProperty("--mx", `${gx}px`);
+      field.style.setProperty("--my", `${gy}px`);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  }
+
   /* ---------------- Scroll reveal (IntersectionObserver) ---------------- */
   function initReveal() {
     const els = document.querySelectorAll("[data-reveal]");
@@ -286,6 +364,9 @@
   function init() {
     renderMarquee();
     renderProjects();
+    renderTestimonials();
+    renderProfile();
+    initGridField();
     initReveal();
     initCounters();
     initHeaderScroll();
