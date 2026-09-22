@@ -5,45 +5,46 @@
  */
 
 const SKILLS = [
-  "UX Research", "UI Design", "Design Systems", "Figma",
-  "Prototyping", "Interaction Design", "Usability Testing", "Branding",
-  "Wireframing", "Framer", "Accessibility", "Design Ops"
+  "Product Strategy", "End-to-End Product Design", "User Research", "Usability Testing",
+  "Interaction & UI Design", "Information Architecture", "Design Systems", "Rapid Prototyping",
+  "Product Analytics", "AI Experience Design", "Accessibility", "Cross-functional Collaboration",
+  "Workshop Facilitation", "Figma", "Mixpanel"
 ];
 
 const PROJECTS = [
   {
-    tag: "UX/UI · Design System",
-    title: "Settly — Home Rental Platform",
-    period: "2023 — Now",
+    tag: "UX/UI · Product Design",
+    title: "Settly — Relocation Platform",
+    period: "2024 — Now",
     description:
-      "Redesigned the core rental search-to-signing flow and built the design system now used across web and mobile.",
+      "Led end-to-end design across web and mobile for a B2B2C relocation platform, lifting mobile adoption from 31% to 81% and cutting vendor response times by 50%.",
     accent: "violet",
     kind: "browser"
   },
   {
-    tag: "Product Design · UX Research",
-    title: "Northwind — Mobile Banking App",
-    period: "2021 — 2023",
+    tag: "Product Design · Design Systems",
+    title: "Bank Windhoek — Digital Banking & Onboarding",
+    period: "2021 — 2024",
     description:
-      "Led research and UI for a full mobile banking redesign, raising task completion on core flows by 34%.",
+      "Streamlined the end-to-end digital onboarding journey and built a scalable Figma design system, reducing onboarding time by 30%.",
     accent: "cyan",
     kind: "phone"
   },
   {
-    tag: "UI Design · Design System",
-    title: "Lumen — B2B SaaS Dashboard",
-    period: "2020 — 2021",
+    tag: "UX/UI · Mobile",
+    title: "Discovery Vitality — Health & Wellness Rewards",
+    period: "2019 — 2021",
     description:
-      "Designed a data-dense analytics dashboard and componentized it into a reusable internal library.",
+      "Designed gamified mobile experiences that grew app engagement by 20%, using usability testing and behavioural insight to guide the roadmap.",
     accent: "amber",
-    kind: "browser"
+    kind: "phone"
   },
   {
-    tag: "Branding · Web Design",
-    title: "Verve — Fintech Rebrand & Site",
-    period: "2019 — 2020",
+    tag: "UX Research · Product Design",
+    title: "Vitality Group International — Global Wellness Platform",
+    period: "2017 — 2018",
     description:
-      "Refreshed brand identity and designed the marketing site for an early-stage payments startup.",
+      "Adapted a configurable wellness platform for international insurance partners, lifting retention by 25% and cutting support enquiries by 15%.",
     accent: "rose",
     kind: "browser"
   }
@@ -58,21 +59,21 @@ const TESTIMONIALS = [
     quote:
       "Kiara has a rare mix of strong craft and genuine curiosity about the user. She turned an ambiguous brief into a design system our whole team still relies on.",
     name: "Sanne de Vries",
-    role: "Head of Product, Settly",
+    role: "Head of Product, [Company]",
     initials: "SV"
   },
   {
     quote:
       "One of the most thoughtful designers I've worked with — she asks the right questions early, and the final UI always feels obvious in hindsight, in the best way.",
     name: "Tom Bakker",
-    role: "Engineering Lead, Northwind Bank",
+    role: "Engineering Lead, [Company]",
     initials: "TB"
   },
   {
     quote:
       "Kiara elevated our entire product surface. She's equally comfortable in research, systems thinking and pixel-level polish — a genuine senior designer.",
     name: "Priya Nair",
-    role: "Founder, Lumen Studio",
+    role: "Founder, [Company]",
     initials: "PN"
   }
 ];
@@ -82,14 +83,9 @@ const TESTIMONIALS = [
  */
 const EDUCATION = [
   {
-    period: "2016 — 2020",
-    title: "BA Communication & Multimedia Design",
-    place: "Amsterdam University of Applied Sciences"
-  },
-  {
-    period: "2021",
-    title: "UX Design Certificate",
-    place: "Nielsen Norman Group"
+    period: "2014 — 2017",
+    title: "Bachelor's Degree in Interaction Design",
+    place: "The Open Window Institute, Pretoria"
   }
 ];
 
