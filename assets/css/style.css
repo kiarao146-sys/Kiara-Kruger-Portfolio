@@ -1014,6 +1014,162 @@ body::before {
 }
 .contact-socials a:hover { color: var(--text); border-color: var(--border-strong); }
 
+/* ================= Case study (project.html) ================= */
+.case-hero {
+  position: relative;
+  isolation: isolate;
+  padding: calc(var(--header-h) + 64px) 0 72px;
+}
+.case-hero > .container { position: relative; z-index: 1; }
+.back-link {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 32px;
+  transition: color var(--dur-fast);
+}
+.back-link:hover { color: var(--text); }
+
+.case-title {
+  font-size: clamp(30px, 5.4vw, 56px);
+  line-height: 1.1;
+  max-width: 880px;
+  margin: 18px 0 22px;
+}
+.case-summary {
+  font-size: 18px;
+  color: var(--text-muted);
+  line-height: 1.65;
+  max-width: 640px;
+  margin-bottom: 40px;
+}
+
+.case-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding-top: 28px;
+  border-top: 1px solid var(--border);
+}
+.case-meta-item { display: flex; flex-direction: column; gap: 4px; }
+.case-meta-item span {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+.case-meta-item strong { font-size: 14px; font-weight: 500; color: var(--text); }
+
+.case-visual-section { padding-bottom: 100px; }
+.case-visual { max-width: 900px; margin: 0 auto; }
+.case-visual .mockup-browser,
+.case-visual .mockup-phone { width: 100%; }
+.case-visual .mockup-phone { max-width: 320px; }
+.case-visual .mockup-body { aspect-ratio: 16 / 9; padding: 28px; gap: 16px; }
+.case-visual .mockup-phone-screen { padding: 24px 18px; gap: 14px; }
+
+.case-content { padding-bottom: 110px; }
+.case-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 64px;
+}
+.case-heading {
+  font-size: 22px;
+  margin: 48px 0 18px;
+}
+.case-heading:first-child { margin-top: 0; }
+.case-prose {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--text-muted);
+  max-width: 620px;
+}
+
+.approach-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 620px;
+}
+.approach-list li {
+  position: relative;
+  padding-left: 28px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+.approach-list li::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 7px;
+  width: 8px; height: 8px;
+  border-radius: 2px;
+  background: var(--grad-primary);
+}
+
+.case-results {
+  align-self: start;
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--bg-card);
+}
+.case-results-title {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 20px;
+}
+.results-grid { display: flex; flex-direction: column; gap: 20px; }
+.result-tile { padding-bottom: 18px; border-bottom: 1px solid var(--border); }
+.result-tile:last-child { border-bottom: none; padding-bottom: 0; }
+.result-value {
+  display: block;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  background: var(--grad-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 4px;
+}
+.result-label { font-size: 13px; color: var(--text-muted); line-height: 1.4; }
+
+.case-next {
+  display: block;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  transition: background var(--dur-fast);
+}
+.case-next:hover { background: var(--bg-card); }
+.case-next-inner {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 40px 32px;
+}
+.case-next .eyebrow { margin-bottom: 0; }
+.case-next-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(18px, 2.4vw, 26px);
+  font-weight: 600;
+  flex-grow: 1;
+}
+.case-next-arrow { color: var(--accent-2); transition: transform var(--dur-fast) var(--ease-soft); flex-shrink: 0; }
+.case-next:hover .case-next-arrow { transform: translateX(6px); }
+
+@media (max-width: 900px) {
+  .case-content-grid { grid-template-columns: 1fr; gap: 40px; }
+  .case-next-inner { flex-wrap: wrap; padding: 32px 20px; }
+}
+
 /* ================= Footer ================= */
 .site-footer { border-top: 1px solid var(--border); padding: 26px 0; }
 .footer-inner {

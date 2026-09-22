@@ -11,40 +11,108 @@ const SKILLS = [
   "Workshop Facilitation", "Figma", "Mixpanel"
 ];
 
+/*
+ * Each project also feeds its own case-study page (project.html?slug=...).
+ * "View case study" links are generated automatically from `slug` —
+ * add a new project here and its detail page works immediately.
+ */
 const PROJECTS = [
   {
+    slug: "settly",
     tag: "UX/UI · Product Design",
     title: "Settly — Relocation Platform",
+    role: "Senior UX Designer",
+    company: "Settly",
     period: "2024 — Now",
     description:
       "Led end-to-end design across web and mobile for a B2B2C relocation platform, lifting mobile adoption from 31% to 81% and cutting vendor response times by 50%.",
+    challenge:
+      "Settly's relocation platform serves three very different audiences through one product — HR teams managing relocations, internal operations teams delivering services, and relocating employees trying to get through a stressful move. The experience needed to feel simple for each of them without fragmenting into three separate products.",
+    approach: [
+      "Led end-to-end design across all three audiences — discovery, research, prototyping, testing and delivery.",
+      "Redesigned key mobile and web journeys to lift adoption and reduce drop-off.",
+      "Designed a centralised vendor communication platform to speed up response times.",
+      "Designed AI-assisted messaging and policy management experiences to reduce manual effort.",
+      "Led user research and usability testing, using qualitative insights and Mixpanel data to validate decisions."
+    ],
+    results: [
+      { value: "31→81%", label: "Mobile adoption" },
+      { value: "50%", label: "Faster vendor response (34 to 17 hrs)" },
+      { value: "40%", label: "Higher user retention" },
+      { value: "30%", label: "Manual effort cut via AI" }
+    ],
     accent: "violet",
     kind: "browser"
   },
   {
+    slug: "bank-windhoek",
     tag: "Product Design · Design Systems",
     title: "Bank Windhoek — Digital Banking & Onboarding",
+    role: "Senior Product Designer",
+    company: "Capricorn Group — Bank Windhoek",
     period: "2021 — 2024",
     description:
       "Streamlined the end-to-end digital onboarding journey and built a scalable Figma design system, reducing onboarding time by 30%.",
+    challenge:
+      "Bank Windhoek's onboarding and banking experience spanned web, mobile, in-branch and self-service channels, each built and maintained differently. Customers and frontline staff needed a faster, more consistent way to get set up and served across every channel.",
+    approach: [
+      "Streamlined the end-to-end digital onboarding journey across channels.",
+      "Built and documented a scalable Figma design system to unify web, mobile, in-branch and self-service.",
+      "Designed intuitive customer and employee experiences across all banking channels.",
+      "Collaborated in cross-functional agile teams, owning design from discovery through delivery."
+    ],
+    results: [
+      { value: "30%", label: "Faster customer onboarding" },
+      { value: "4", label: "Channels unified under one design system" }
+    ],
     accent: "cyan",
     kind: "phone"
   },
   {
+    slug: "discovery-vitality",
     tag: "UX/UI · Mobile",
     title: "Discovery Vitality — Health & Wellness Rewards",
+    role: "UX/UI Designer",
+    company: "Discovery Limited — Discovery Vitality ZA",
     period: "2019 — 2021",
     description:
       "Designed gamified mobile experiences that grew app engagement by 20%, using usability testing and behavioural insight to guide the roadmap.",
+    challenge:
+      "Vitality's rewards programme needed to keep members engaged long-term — turning healthy habits into an ongoing, gamified experience rather than a one-time sign-up, across a large and diverse member base.",
+    approach: [
+      "Designed gamified health and rewards experiences that encouraged continued participation.",
+      "Identified user pain points through usability testing, behavioural insight and competitor research.",
+      "Mentored designers on UX best practice and shared Figma libraries.",
+      "Led end-to-end design and launch of new mobile functionality with product and engineering.",
+      "Used A/B testing to evaluate and optimise product experiences."
+    ],
+    results: [
+      { value: "20%", label: "Increase in mobile-app engagement" }
+    ],
     accent: "amber",
     kind: "phone"
   },
   {
+    slug: "vitality-group-international",
     tag: "UX Research · Product Design",
     title: "Vitality Group International — Global Wellness Platform",
+    role: "UX/UI Designer",
+    company: "Discovery Limited — Vitality Group International",
     period: "2017 — 2018",
     description:
       "Adapted a configurable wellness platform for international insurance partners, lifting retention by 25% and cutting support enquiries by 15%.",
+    challenge:
+      "The same wellness platform needed to work for insurance partners and their members across multiple international markets, each with different cultural expectations and business rules — without rebuilding it from scratch for every partner.",
+    approach: [
+      "Improved the mobile experience and accessibility for international markets.",
+      "Used research and user data to adapt experiences to different cultural and behavioural needs.",
+      "Designed configurable functionality that was efficiently reused across partner-market applications.",
+      "Created end-to-end user journeys and interactive prototypes, validated through in-person and remote usability testing."
+    ],
+    results: [
+      { value: "25%", label: "Increase in user retention" },
+      { value: "15%", label: "Decrease in support enquiries" }
+    ],
     accent: "rose",
     kind: "browser"
   }
