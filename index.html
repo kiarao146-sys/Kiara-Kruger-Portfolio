@@ -24,13 +24,6 @@
   <div class="cursor-ring"></div>
 </div>
 
-<!-- interactive background grid: brightens into a spotlight around the cursor -->
-<div class="grid-field" id="gridField" aria-hidden="true">
-  <div class="grid-field__base"></div>
-  <div class="grid-field__light"></div>
-  <div class="grid-field__glow"></div>
-</div>
-
 <!-- ============ HEADER ============ -->
 <header class="site-header" id="siteHeader">
   <div class="container header-inner">
@@ -76,6 +69,11 @@
 
   <!-- ============ HERO ============ -->
   <section class="hero" id="hero">
+    <div class="grid-field" aria-hidden="true">
+      <div class="grid-field__base"></div>
+      <div class="grid-field__light"></div>
+      <div class="grid-field__glow"></div>
+    </div>
     <div class="container hero-inner">
       <div class="hero-top" data-reveal>
         <div class="avatar" aria-hidden="true">
@@ -153,39 +151,28 @@
 
   <!-- ============ ABOUT ME (personal) ============ -->
   <section class="profile" id="about">
-    <div class="container profile-grid">
-      <div class="profile-side" data-reveal>
-        <div class="profile-photo" aria-hidden="true"><span>KK</span></div>
-        <ul class="profile-facts">
-          <li><span>Based in</span>Amsterdam, NL</li>
-          <li><span>Studied</span>Communication &amp; Multimedia Design</li>
-          <li><span>Speaks</span>English, Dutch</li>
-        </ul>
-      </div>
+    <div class="container profile-body">
+      <span class="eyebrow">About me</span>
+      <h2 class="section-title" style="margin-bottom:28px;">A little more about me.</h2>
 
-      <div class="profile-body">
-        <span class="eyebrow">About me</span>
-        <h2 class="section-title" style="margin-bottom:28px;">A little more about me.</h2>
+      <!-- Personal bio — edit this paragraph freely -->
+      <p class="about-lead" data-reveal>
+        When I'm not designing, you'll probably find me exploring Amsterdam by bike,
+        trying out a new coffee spot, or getting lost in a sketchbook. I studied
+        Communication &amp; Multimedia Design and have been curious about how people
+        interact with technology ever since. I believe good design happens where
+        craft, empathy and a bit of curiosity meet — and I'm always up for a
+        conversation about any of the three.
+      </p>
 
-        <!-- Personal bio — edit this paragraph freely -->
-        <p class="about-lead" data-reveal>
-          When I'm not designing, you'll probably find me exploring Amsterdam by bike,
-          trying out a new coffee spot, or getting lost in a sketchbook. I studied
-          Communication &amp; Multimedia Design and have been curious about how people
-          interact with technology ever since. I believe good design happens where
-          craft, empathy and a bit of curiosity meet — and I'm always up for a
-          conversation about any of the three.
-        </p>
-
-        <div class="profile-columns">
-          <div class="profile-col" data-reveal>
-            <h3 class="profile-col-title">Interests</h3>
-            <div class="interest-tags" id="interestTags"></div>
-          </div>
-          <div class="profile-col" data-reveal>
-            <h3 class="profile-col-title">Education</h3>
-            <div class="education-list" id="educationList"></div>
-          </div>
+      <div class="profile-columns">
+        <div class="profile-col" data-reveal>
+          <h3 class="profile-col-title">Interests</h3>
+          <div class="interest-tags" id="interestTags"></div>
+        </div>
+        <div class="profile-col" data-reveal>
+          <h3 class="profile-col-title">Education</h3>
+          <div class="education-list" id="educationList"></div>
         </div>
       </div>
     </div>
@@ -346,6 +333,11 @@
 
   <!-- ============ CONTACT ============ -->
   <section class="contact" id="contact">
+    <div class="grid-field" aria-hidden="true">
+      <div class="grid-field__base"></div>
+      <div class="grid-field__light"></div>
+      <div class="grid-field__glow"></div>
+    </div>
     <div class="container">
       <div class="contact-inner" data-reveal>
         <span class="eyebrow">Get in touch</span>

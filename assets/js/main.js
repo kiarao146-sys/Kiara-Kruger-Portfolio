@@ -120,37 +120,43 @@
 
   /* ---------------- Interactive grid field ---------------- */
   function initGridField() {
-    const field = document.getElementById("gridField");
-    if (!field || window.matchMedia("(pointer: coarse)").matches) return;
+    const fields = document.querySelectorAll(".grid-field");
+    if (!fields.length || window.matchMedia("(pointer: coarse)").matches) return;
 
-    let mx = window.innerWidth / 2;
-    let my = window.innerHeight / 2;
-    let gx = mx;
-    let gy = my;
+    fields.forEach((field) => {
+      const host = field.parentElement; // the section that owns this grid (Hero, Contact)
+      if (!host) return;
 
-    field.style.setProperty("--mx", `${mx}px`);
-    field.style.setProperty("--my", `${my}px`);
+      const initialRect = field.getBoundingClientRect();
+      let mx = initialRect.width / 2;
+      let my = initialRect.height / 2;
+      let gx = mx;
+      let gy = my;
 
-    window.addEventListener(
-      "mousemove",
-      (e) => {
-        mx = e.clientX;
-        my = e.clientY;
-        field.classList.add("is-active");
-      },
-      { passive: true }
-    );
-    window.addEventListener("mouseleave", () => field.classList.remove("is-active"));
+      host.addEventListener(
+        "mousemove",
+        (e) => {
+          // recomputed live since this section can move under the (fixed-viewport)
+          // mouse position as the page scrolls
+          const rect = field.getBoundingClientRect();
+          mx = e.clientX - rect.left;
+          my = e.clientY - rect.top;
+          field.classList.add("is-active");
+        },
+        { passive: true }
+      );
+      host.addEventListener("mouseleave", () => field.classList.remove("is-active"));
 
-    const ease = reduceMotion ? 1 : 0.09;
-    function raf() {
-      gx += (mx - gx) * ease;
-      gy += (my - gy) * ease;
-      field.style.setProperty("--mx", `${gx}px`);
-      field.style.setProperty("--my", `${gy}px`);
+      const ease = reduceMotion ? 1 : 0.09;
+      function raf() {
+        gx += (mx - gx) * ease;
+        gy += (my - gy) * ease;
+        field.style.setProperty("--mx", `${gx}px`);
+        field.style.setProperty("--my", `${gy}px`);
+        requestAnimationFrame(raf);
+      }
       requestAnimationFrame(raf);
-    }
-    requestAnimationFrame(raf);
+    });
   }
 
   /* ---------------- Scroll reveal (IntersectionObserver) ---------------- */
