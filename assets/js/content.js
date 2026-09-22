@@ -51,30 +51,44 @@ const PROJECTS = [
 ];
 
 /*
- * Replace with your real LinkedIn recommendations —
- * quote, name, role/company and a photo (or leave initials for a placeholder).
+ * Real LinkedIn recommendations. Full text of each is longer —
+ * trimmed here to the strongest 2-3 sentences for card readability.
  */
 const TESTIMONIALS = [
   {
     quote:
-      "Kiara has a rare mix of strong craft and genuine curiosity about the user. She turned an ambiguous brief into a design system our whole team still relies on.",
-    name: "Sanne de Vries",
-    role: "Head of Product, [Company]",
-    initials: "SV"
+      "Kiara has a rare combination of skills: sharp creative instinct paired with genuine proactivity. She didn't wait to be told what needed solving — she talked to clients, spotted friction points before anyone else did, and came back with original, well-considered solutions. I would rehire her without a second thought.",
+    name: "Kimo Paula",
+    role: "Settly",
+    initials: "KP"
   },
   {
     quote:
-      "One of the most thoughtful designers I've worked with — she asks the right questions early, and the final UI always feels obvious in hindsight, in the best way.",
-    name: "Tom Bakker",
-    role: "Engineering Lead, [Company]",
-    initials: "TB"
+      "She's a talented designer who consistently impressed me with her attention to detail, consideration of user experience and adherence to principles and guidelines. Beyond her technical skills, Kiara is a wonderful teammate with great mentoring and leadership skills.",
+    name: "Marianka Cilliers",
+    role: "Head of Design, Platform45",
+    initials: "MC"
   },
   {
     quote:
-      "Kiara elevated our entire product surface. She's equally comfortable in research, systems thinking and pixel-level polish — a genuine senior designer.",
-    name: "Priya Nair",
-    role: "Founder, [Company]",
-    initials: "PN"
+      "Kiara's passion for creating seamless user experiences was evident in every project. She meticulously analyzed user journeys, ensuring our Vitality Rewards Programme was intuitive and engaging. I wholeheartedly recommend her for any role where creativity, collaboration and user-centric design are essential.",
+    name: "Dee Louw",
+    role: "Divisional Manager & Head of UX for Vitality, Discovery Limited",
+    initials: "DL"
+  },
+  {
+    quote:
+      "Kiara demonstrated exceptional skill and professionalism. She effectively translated stakeholder requirements into outstanding user journeys — many of her interface designs were actually developed and became key customer journeys in the Discovery mobile app.",
+    name: "Shaylen Hira",
+    role: "Senior Manager, Data Science & AI, Discovery",
+    initials: "SH"
+  },
+  {
+    quote:
+      "Kiara is an excellent person to have on your team. She has a passion for producing work of the highest quality and detail, brings a sense of calmness to the team, and has an amazing work ethic.",
+    name: "Alvina Ward-Apolles",
+    role: "Business Systems Analyst, CBAP",
+    initials: "AW"
   }
 ];
 
