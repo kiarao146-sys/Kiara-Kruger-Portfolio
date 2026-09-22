@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kiara Kruger — Senior UX/UI Designer</title>
+<meta name="description" content="Kiara Kruger is a Senior UX/UI Designer crafting clear, considered digital products — UX research, interface design and design systems." />
+
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<!-- scroll progress -->
+<div class="scroll-progress" aria-hidden="true"><span id="scrollProgressBar"></span></div>
+
+<!-- custom cursor (desktop only, see main.js) -->
+<div class="cursor" id="cursor" aria-hidden="true">
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#top" class="logo" data-cursor="link">
+      <span class="logo-mark">KK</span>
+      <span class="logo-text">Kiara Kruger</span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="Primary">
+      <ul>
+        <li><a href="#work" data-nav-link data-cursor="link">Work</a></li>
+        <li><a href="#about" data-nav-link data-cursor="link">About</a></li>
+        <li><a href="#services" data-nav-link data-cursor="link">Services</a></li>
+        <li><a href="#contact" data-nav-link data-cursor="link">Contact</a></li>
+      </ul>
+      <span class="nav-indicator" id="navIndicator" aria-hidden="true"></span>
+    </nav>
+
+    <div class="header-meta">
+      <span class="local-clock" id="localClock" data-cursor="default">
+        <span class="clock-dot"></span>
+        <span id="clockCity">Amsterdam</span> · <span id="clockTime">--:--</span>
+      </span>
+      <a href="#contact" class="btn btn-ghost btn-sm header-cta" data-cursor="link">Let's talk</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" data-cursor="link">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="nav-mobile" id="navMobile">
+    <ul>
+      <li><a href="#work" data-nav-link-mobile>Work</a></li>
+      <li><a href="#about" data-nav-link-mobile>About</a></li>
+      <li><a href="#services" data-nav-link-mobile>Services</a></li>
+      <li><a href="#contact" data-nav-link-mobile>Contact</a></li>
+    </ul>
+    <a href="mailto:kiara@settly.nl" class="nav-mobile-email">kiara@settly.nl</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="container hero-inner">
+      <div class="hero-top" data-reveal>
+        <div class="avatar" aria-hidden="true">
+          <span>KK</span>
+        </div>
+        <span class="pill pill-status" data-cursor="default">
+          <span class="pill-dot"></span>
+          Available for select projects — 2026
+        </span>
+      </div>
+
+      <h1 class="hero-title">
+        <span class="reveal-line" data-reveal><span class="reveal-inner">Hi, I'm Kiara —</span></span>
+        <span class="reveal-line" data-reveal style="--d:1"><span class="reveal-inner">a <em>Senior UX/UI</em></span></span>
+        <span class="reveal-line" data-reveal style="--d:2"><span class="reveal-inner"><em>Designer</em> based in</span></span>
+        <span class="reveal-line" data-reveal style="--d:3"><span class="reveal-inner">Amsterdam, NL.</span></span>
+      </h1>
+
+      <div class="hero-bottom">
+        <p class="hero-sub" data-reveal style="--d:4">
+          I design clear, considered digital products — from early research
+          to polished interfaces and the systems that hold them together.
+          Currently shaping product experience at
+          <a href="#" class="text-link" data-cursor="link">Settly</a>.
+        </p>
+
+        <div class="hero-actions" data-reveal style="--d:5">
+          <a href="#work" class="btn btn-primary" data-cursor="link">
+            <span>View my work</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-outline" data-cursor="link">Get in touch</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="hero-stats" data-reveal style="--d:6">
+        <div class="stat">
+          <span class="stat-num" data-count="7">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Years of<br>experience</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat-num" data-count="60">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Projects<br>shipped</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat-num" data-count="20">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Happy<br>clients</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat-num" data-count="4">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Design<br>awards</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="#work" class="scroll-cue" data-cursor="link" aria-label="Scroll to work">
+      <span>Scroll</span>
+      <span class="scroll-cue-line"><i></i></span>
+    </a>
+  </section>
+
+  <!-- ============ SKILLS MARQUEE ============ -->
+  <section class="marquee-section" aria-label="Skills and tools">
+    <div class="marquee" data-speed="slow">
+      <div class="marquee-track" id="marqueeTrack">
+        <!-- items injected by JS from content.js, duplicated for seamless loop -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="container about-grid">
+      <div class="about-head" data-reveal>
+        <span class="eyebrow">Présentation</span>
+        <h2 class="section-title">
+          Design that starts with the problem, not the pixels.
+        </h2>
+      </div>
+
+      <div class="about-body">
+        <p class="about-lead" data-reveal>
+          I'm a product designer with <strong>7+ years</strong> of experience across
+          fintech, proptech and B2B SaaS. I work end‑to‑end — research, UX flows,
+          UI design and the design systems that keep teams shipping fast without
+          losing quality. I care about the details, but never at the expense of
+          the bigger picture.
+        </p>
+
+        <div class="about-principles">
+          <div class="principle" data-reveal>
+            <span class="principle-index">01</span>
+            <h3>Research‑informed</h3>
+            <p>Every decision is traceable back to a user problem, a metric, or a constraint — not a trend.</p>
+          </div>
+          <div class="principle" data-reveal>
+            <span class="principle-index">02</span>
+            <h3>Systems thinking</h3>
+            <p>I design components and patterns, not one‑off screens, so products stay consistent as they scale.</p>
+          </div>
+          <div class="principle" data-reveal>
+            <span class="principle-index">03</span>
+            <h3>Craft over noise</h3>
+            <p>Typography, spacing, motion and copy get the same attention as the core flow.</p>
+          </div>
+          <div class="principle" data-reveal>
+            <span class="principle-index">04</span>
+            <h3>Close to engineering</h3>
+            <p>I design in the browser as much as in Figma, and pair closely with the devs who ship the work.</p>
+          </div>
+        </div>
+
+        <div class="timeline" data-reveal>
+          <div class="timeline-item">
+            <div class="timeline-when">2023 — Now</div>
+            <div class="timeline-what">
+              <h4>Senior UX/UI Designer <span>· Settly</span></h4>
+              <p>Leading end‑to‑end product design for the core rental platform and its design system.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-when">2020 — 2023</div>
+            <div class="timeline-what">
+              <h4>Product Designer <span>· Northwind Bank</span></h4>
+              <p>Owned UX for the mobile banking app, from research through to shipped UI.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-when">2018 — 2020</div>
+            <div class="timeline-what">
+              <h4>UI Designer <span>· Lumen Studio</span></h4>
+              <p>Designed marketing sites and dashboards for early‑stage SaaS clients.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WORK ============ -->
+  <section class="work" id="work">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Selected work</span>
+        <h2 class="section-title">A few projects I'm proud of.</h2>
+      </div>
+
+      <div class="work-list" id="workList">
+        <!-- project cards injected by JS from content.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">How I can help</span>
+        <h2 class="section-title">From first sketch to shipped product.</h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card" data-reveal data-tile="violet">
+          <div class="service-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.6"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <h3>UX Research</h3>
+          <p>Interviews, usability testing and journey mapping that ground design in real user behaviour.</p>
+        </div>
+        <div class="service-card" data-reveal data-tile="cyan">
+          <div class="service-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.6"/><path d="M3 9h18M9 21V9" stroke="currentColor" stroke-width="1.6"/></svg>
+          </div>
+          <h3>UI Design</h3>
+          <p>High‑fidelity interfaces with obsessive attention to typography, spacing and micro‑interactions.</p>
+        </div>
+        <div class="service-card" data-reveal data-tile="amber">
+          <div class="service-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.6"/><rect x="14" y="4" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.6"/><rect x="3" y="15" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.6"/><rect x="14" y="15" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.6"/></svg>
+          </div>
+          <h3>Design Systems</h3>
+          <p>Scalable component libraries and documentation that keep product and brand consistent.</p>
+        </div>
+        <div class="service-card" data-reveal data-tile="rose">
+          <div class="service-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 12a8 8 0 1 1 8 8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M4 12v5h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Prototyping &amp; Testing</h3>
+          <p>Interactive prototypes and rapid validation cycles that de‑risk decisions before build.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED IN / LOGOS ============ -->
+  <section class="logos-section" data-reveal>
+    <div class="container">
+      <p class="logos-label">Trusted by teams at</p>
+      <div class="logos-row">
+        <span>Settly</span>
+        <span>Northwind</span>
+        <span>Lumen</span>
+        <span>Verve</span>
+        <span>Paperlane</span>
+        <span>Orbit&nbsp;Labs</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-inner" data-reveal>
+        <span class="eyebrow">Get in touch</span>
+        <h2 class="contact-title">
+          Let's build something<br class="br-desktop"> people actually <em>enjoy using.</em>
+        </h2>
+        <a href="mailto:kiara@settly.nl" class="contact-email" data-cursor="link">
+          kiara@settly.nl
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" class="contact-email-icon"><path d="M7 17L17 7M17 7H8M17 7v9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+
+        <div class="contact-socials">
+          <a href="#" data-cursor="link">LinkedIn</a>
+          <a href="#" data-cursor="link">Dribbble</a>
+          <a href="#" data-cursor="link">Behance</a>
+          <a href="#" data-cursor="link">Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© <span id="year"></span> Kiara Kruger. All rights reserved.</span>
+    <button class="back-to-top" id="backToTop" data-cursor="link">
+      Back to top
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M8 13V3M4 7l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <span>Designed &amp; built by Kiara Kruger</span>
+  </div>
+</footer>
+
+<script src="assets/js/content.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
