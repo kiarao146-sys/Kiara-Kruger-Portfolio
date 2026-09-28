@@ -71,6 +71,7 @@ const PROJECTS = [
   },
   {
     slug: "discovery-vitality",
+    href: "case-discovery.html",
     tag: "UX/UI · Mobile",
     title: "Discovery Vitality — Health & Wellness Rewards",
     role: "UX/UI Designer",

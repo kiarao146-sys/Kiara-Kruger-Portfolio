@@ -29,7 +29,7 @@
       if (lastFocus) lastFocus.focus();
     }
 
-    document.querySelectorAll(".cs-media img").forEach((img) => {
+    document.querySelectorAll(".cs-media:not(.cs-media--small) img").forEach((img) => {
       img.tabIndex = 0;
       img.setAttribute("role", "button");
       img.addEventListener("click", () => open(img));

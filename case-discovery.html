@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Behavioural Change App — Kiara Kruger</title>
+<meta name="description" content="Case study: personalised goals and game-style rewards for Discovery's Vitality app, which lifted mobile engagement by 20%." />
+
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="cs" data-accent-page="rose">
+
+<div class="scroll-progress" aria-hidden="true"><span id="scrollProgressBar"></span></div>
+
+<div class="cursor" id="cursor" aria-hidden="true">
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="index.html" class="logo" data-cursor="link">
+      <span class="logo-mark">KK</span>
+      <span class="logo-text">Kiara Kruger</span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="Primary">
+      <ul>
+        <li><a href="index.html#work" data-cursor="link">Work</a></li>
+        <li><a href="index.html#about" data-cursor="link">About</a></li>
+        <li><a href="index.html#services" data-cursor="link">Services</a></li>
+        <li><a href="index.html#contact" data-cursor="link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-meta">
+      <span class="local-clock" id="localClock" data-cursor="default">
+        <span class="clock-dot"></span>
+        <span id="clockCity">Netherlands</span> · <span id="clockTime">--:--</span>
+      </span>
+      <a href="index.html#contact" class="btn btn-ghost btn-sm header-cta" data-cursor="link">Let's talk</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" data-cursor="link">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="nav-mobile" id="navMobile">
+    <ul>
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <a href="mailto:kiarao146@gmail.com" class="nav-mobile-email">kiarao146@gmail.com</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="case-hero cs-hero">
+    <div class="grid-field" aria-hidden="true">
+      <div class="grid-field__base"></div>
+      <div class="grid-field__light"></div>
+      <div class="grid-field__glow"></div>
+    </div>
+    <div class="container">
+      <a href="index.html#work" class="back-link" data-cursor="link" data-reveal>
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M12 4L4 12M4 12H11M4 12V5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        All work
+      </a>
+
+      <span class="project-tag" data-reveal style="--d:1">Discovery Vitality · 2019 — 2021</span>
+      <h1 class="case-title" data-reveal style="--d:2">Making healthy habits worth coming back for.</h1>
+      <p class="case-summary" data-reveal style="--d:3">
+        I led design for my area of Discovery's Vitality app, a large legacy insurance app that rewards
+        members for healthier choices. I added personalised goals, game-style rewards and a cleaner
+        dashboard to keep members active long after sign-up.
+      </p>
+
+      <dl class="cs-facts" data-reveal style="--d:4">
+        <div><dt>Role</dt><dd>UX/UI Designer</dd></div>
+        <div><dt>Timeline</dt><dd>Jan 2019 — Oct 2021</dd></div>
+        <div><dt>Platform</dt><dd>Native iOS &amp; Android, responsive web</dd></div>
+        <div><dt>Industry</dt><dd>Health &amp; fitness · Insurance</dd></div>
+        <div><dt>Tools</dt><dd>Sketch, Figma, Zeplin, Keynote, Illustrator, After Effects</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ COVER ============ -->
+  <section class="cs-block cs-block--flush">
+    <div class="container">
+      <figure class="cs-media cs-media--wide" data-reveal>
+        <img src="assets/media/discovery/cover.webp" alt="Vitality Active Gear discount ring, Active Rewards goal rings with a trophy, and the Play the Gameboard screen" />
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ AT A GLANCE ============ -->
+  <section class="cs-block">
+    <div class="container cs-glance">
+      <div class="cs-glance-text" data-reveal>
+        <span class="eyebrow">At a glance</span>
+        <p class="cs-lead">
+          Vitality rewards Discovery members for healthier choices. The app is how they track goals, earn
+          points and claim rewards. With so many health and fitness apps competing for attention, my job was
+          to make that experience personal and motivating enough to keep people engaged week after week.
+        </p>
+      </div>
+      <div class="cs-stats cs-stats--single" data-reveal>
+        <div class="cs-stat"><span class="cs-stat-num">20%</span><span class="cs-stat-label">Increase in mobile-app engagement</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROBLEM ============ -->
+  <section class="cs-block">
+    <div class="container">
+      <div class="cs-head" data-reveal>
+        <span class="eyebrow">The problem</span>
+        <h2 class="cs-h2">Starting healthy habits is easy. Keeping them is hard.</h2>
+        <p class="cs-body">Many people lack the motivation and guidance to make lasting changes. In a crowded market of health and fitness apps, Vitality needed to stand out and support members through the whole journey to a sustainable, healthy lifestyle.</p>
+      </div>
+      <ul class="cs-needs cs-needs--row" data-reveal>
+        <li>Low user engagement and motivation.</li>
+        <li>Long-term adherence and behaviour change.</li>
+        <li>Growing user acquisition.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ ROLE & CONSTRAINTS ============ -->
+  <section class="cs-block">
+    <div class="container cs-two">
+      <div data-reveal>
+        <span class="eyebrow">My role</span>
+        <h3 class="cs-h3">Leading design for my area of a very large app.</h3>
+        <p class="cs-body">The app was big enough that several design and development teams each owned a part of it. Teams changed often, but for most of the project I led design for my area, working with cross-functional teams and developers.</p>
+        <ul class="cs-tags">
+          <li>User research &amp; testing</li>
+          <li>Wireframes</li>
+          <li>Visual design</li>
+          <li>Prototypes</li>
+          <li>Mentoring junior designers</li>
+        </ul>
+      </div>
+      <div data-reveal>
+        <span class="eyebrow">Constraints</span>
+        <h3 class="cs-h3">A legacy app and two dev teams to align.</h3>
+        <p class="cs-body">Working in a legacy app meant designing around outdated, inconsistent UI. The team structure also meant bringing two development teams into line so features behaved the same across platforms.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS OVERVIEW ============ -->
+  <section class="cs-block" id="process">
+    <div class="container">
+      <div class="cs-head" data-reveal>
+        <span class="eyebrow">Process</span>
+        <h2 class="cs-h2">From research to live, and back again.</h2>
+      </div>
+      <ol class="cs-steps" data-reveal>
+        <li><a href="#research" data-cursor="link"><span class="cs-step-num">01</span><span>Research &amp; ideate</span></a></li>
+        <li><a href="#collaborate" data-cursor="link"><span class="cs-step-num">02</span><span>Collaborate on design</span></a></li>
+        <li><a href="#handover" data-cursor="link"><span class="cs-step-num">03</span><span>Development handover</span></a></li>
+        <li><a href="#qa" data-cursor="link"><span class="cs-step-num">04</span><span>Design QA</span></a></li>
+        <li><a href="#iterate" data-cursor="link"><span class="cs-step-num">05</span><span>Iterate through feedback</span></a></li>
+      </ol>
+      <figure class="cs-media cs-media--wide" data-reveal>
+        <img src="assets/media/discovery/process.webp" alt="Design process: 1 Research and ideate, 2 Collaboration in design, 3 Development handover, 4 Quality assurance, 5 Iterate through feedback" loading="lazy" />
+      </figure>
+    </div>
+  </section>
+
+  <!-- 01 RESEARCH -->
+  <section class="cs-block cs-phase" id="research">
+    <div class="container">
+      <div class="cs-head" data-reveal>
+        <span class="eyebrow">01 · Research &amp; ideate</span>
+        <h2 class="cs-h2">Start with how members actually use the app.</h2>
+      </div>
+      <div class="cs-grid4">
+        <div class="cs-item" data-reveal><h4>Problem statement</h4><p>Framed a problem statement that bridged business goals and member needs.</p></div>
+        <div class="cs-item" data-reveal><h4>Competitive analysis</h4><p>Looked at what made competitors succeed or fail, and where we could do better.</p></div>
+        <div class="cs-item" data-reveal><h4>User testing</h4><p>Tested with new and existing members to understand how they think, navigate and feel in the app.</p></div>
+        <div class="cs-item" data-reveal><h4>Google Analytics</h4><p>Used retention, conversion and interaction data to understand behaviour and guide design decisions.</p></div>
+      </div>
+      <figure class="cs-media" data-reveal>
+        <img src="assets/media/discovery/research.webp" alt="Photos of sticky-note card sorting and whiteboard sketches of app screens" loading="lazy" />
+        <figcaption>Card sorting, idea generation and screen sketching for several features.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 02 COLLABORATE -->
+  <section class="cs-block cs-phase" id="collaborate">
+    <div class="container">
+      <div class="cs-head" data-reveal>
+        <span class="eyebrow">02 · Collaborate on design</span>
+        <h2 class="cs-h2">Business, developers and designers in the room early.</h2>
+      </div>
+      <div class="cs-grid4">
+        <div class="cs-item" data-reveal><h4>Business involvement</h4><p>Worked closely with the business throughout. That trust gave room to explore new ideas and surface risks early.</p></div>
+        <div class="cs-item" data-reveal><h4>Developer input</h4><p>Ran workshops and huddles with developers to check feasibility and review iterations, saving rework later.</p></div>
+        <div class="cs-item" data-reveal><h4>Design reviews</h4><p>Held regular design critiques for knowledge sharing, consistency and different perspectives on a problem.</p></div>
+        <div class="cs-item" data-reveal><h4>Design system</h4><p>Helped build and maintain the mobile design system, consolidating reusable components and styles for design and development.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 HANDOVER -->
+  <section class="cs-block cs-phase" id="handover">
+    <div class="container cs-feature">
+      <div class="cs-feature-text" data-reveal>
+        <span class="eyebrow">03 · Development handover</span>
+        <h2 class="cs-h2">Handover that developers can build from.</h2>
+        <p class="cs-body">I organised and exported designs and assets in Zeplin, then moved handover to Figma when the team migrated from Sketch. Clean handover sped up developers' work and kept components consistent and reusable.</p>
+      </div>
+      <figure class="cs-media cs-media--small" data-reveal>
+        <img src="assets/media/discovery/handover.webp" alt="Zeplin and Figma app icons" loading="lazy" />
+      </figure>
+    </div>
+  </section>
+
+  <!-- 04 QA -->
+  <section class="cs-block cs-phase" id="qa">
+    <div class="container">
+      <div class="cs-head" data-reveal>
+        <span class="eyebrow">04 · Design QA</span>
+        <h2 class="cs-h2">Checking every user type, scenario and error.</h2>
+        <p class="cs-body">I tested builds regularly in both testing and production environments, covering different user types, scenarios and error states. I documented and raised every mismatch in UI or interaction, with expected and actual results side by side.</p>
+      </div>
+      <figure class="cs-media" data-reveal>
+        <img src="assets/media/discovery/qa.webp" alt="Design QA ticket comparing expected results, a What's New module, with actual results, the dashboard, with the steps to reproduce" loading="lazy" />
+        <figcaption>How I lay out a design QA issue: expected result, actual result and steps to reproduce.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 05 ITERATE -->
+  <section class="cs-block cs-phase" id="iterate">
+    <div class="container">
+      <div class="cs-head" data-reveal>
+        <span class="eyebrow">05 · Iterate through feedback</span>
+        <h2 class="cs-h2">Before and after.</h2>
+        <p class="cs-body">Business and member feedback drove steady rounds of iteration on the most-used screens.</p>
+      </div>
+      <div class="cs-two">
+        <figure class="cs-media" data-reveal>
+          <img src="assets/media/discovery/iteration-dashboard.webp" alt="Vitality Active Rewards dashboard before, with separate fitness and drive lists, and after, with combined goal rings and rewards" loading="lazy" />
+          <figcaption><strong>Active Rewards dashboard.</strong> Separate goal lists became one overview with rewards and plays in view.</figcaption>
+        </figure>
+        <figure class="cs-media" data-reveal>
+          <img src="assets/media/discovery/iteration-landing.webp" alt="Vitality landing screen before, a long list of menu items, and after, status cards, partner benefits and Active Rewards progress" loading="lazy" />
+          <figcaption><strong>Vitality landing.</strong> A long menu became status, benefits and progress at a glance.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SOLUTION ============ -->
+  <section class="cs-block">
+    <div class="container">
+      <div class="cs-head" data-reveal>
+        <span class="eyebrow">The solution</span>
+        <h2 class="cs-h2">Personal goals and rewards people can feel.</h2>
+        <p class="cs-body">Research showed where to improve. We tailored the experience to each member's behaviour and needs, and backed it with a reward system that gives real incentives for progress.</p>
+      </div>
+      <figure class="cs-media cs-media--wide" data-reveal>
+        <img src="assets/media/discovery/solution-goals.webp" alt="Personalised goal setting. Goals are based on the member's fitness level, lifestyle and health objectives, which boosts engagement and makes a lasting commitment to healthier living more likely. Shown: the Vitality Active Rewards overview with goal ring and trophy." loading="lazy" />
+      </figure>
+      <figure class="cs-media cs-media--wide" data-reveal>
+        <img src="assets/media/discovery/solution-gamify.webp" alt="Gamify and incentivise. Trophies, challenges and social features, plus virtual rewards, discounts and real incentives, make health and fitness more engaging and give a sense of achievement. Shown: Nike gear 70% discount ring and the Play the Gameboard screen." loading="lazy" />
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ KEY FEATURES ============ -->
+  <section class="cs-block">
+    <div class="container">
+      <div class="cs-head" data-reveal>
+        <span class="eyebrow">Key features</span>
+        <h2 class="cs-h2">Set goals. Get active. Get rewarded.</h2>
+      </div>
+
+      <div class="cs-feature" data-reveal>
+        <div class="cs-feature-text">
+          <span class="cs-kicker">Personalised health goals</span>
+          <h3 class="cs-h3">Targets that fit each member's routine</h3>
+          <p class="cs-body">Goals are based on each member's behaviour and daily routine, from vaccinations to healthy food purchases and mental wellbeing minutes. They stay realistic and achievable, so they inspire rather than overwhelm.</p>
+        </div>
+        <figure class="cs-media">
+          <img src="assets/media/discovery/feature-goals.webp" alt="Goal progress cards: 2 of 5 vaccinations, 20 of 25 HealthyFood purchases, 1 of 10 mental wellbeing minutes" loading="lazy" />
+        </figure>
+      </div>
+
+      <div class="cs-feature cs-feature--flip" data-reveal>
+        <div class="cs-feature-text">
+          <span class="cs-kicker">Get active</span>
+          <h3 class="cs-h3">Points for every kind of activity</h3>
+          <p class="cs-body">Running, cycling, swimming, yoga and more all earn points. Points build a member's Vitality status, and a higher status means better rewards.</p>
+        </div>
+        <figure class="cs-media">
+          <img src="assets/media/discovery/feature-active.webp" alt="Activity icons for running, cycling, hiking, swimming, yoga, weights and more" loading="lazy" />
+        </figure>
+      </div>
+
+      <div class="cs-feature" data-reveal>
+        <div class="cs-feature-text">
+          <span class="cs-kicker">Get rewarded</span>
+          <h3 class="cs-h3">A weekly gameboard with real prizes</h3>
+          <p class="cs-body">Each week, members who stay active can play the gameboard and pick tiles to win Discovery Miles, a digital currency, or real rewards like coffees and vouchers.</p>
+        </div>
+        <figure class="cs-media">
+          <img src="assets/media/discovery/feature-rewards.webp" alt="Play the Gameboard screen surrounded by a coffee cup, cash, coins, a shopping bag and the Discovery Miles symbol" loading="lazy" />
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OUTCOMES + LEARNINGS ============ -->
+  <section class="cs-block">
+    <div class="container cs-two">
+      <div data-reveal>
+        <span class="eyebrow">Outcome</span>
+        <h2 class="cs-h2">More members using the app, more often.</h2>
+        <div class="cs-stats cs-stats--single cs-stats--stack">
+          <div class="cs-stat"><span class="cs-stat-num">20%</span><span class="cs-stat-label">Increase in mobile-app engagement</span></div>
+        </div>
+      </div>
+      <div data-reveal>
+        <span class="eyebrow">What I learned</span>
+        <ul class="cs-learnings">
+          <li><strong>Owning a whole platform.</strong> Overseeing the complete Vitality product on iOS taught me management, leadership and full ownership of outcomes.</li>
+          <li><strong>Growing other designers.</strong> I guided, supervised and mentored junior designers as they joined and contributed to the project.</li>
+          <li><strong>Adapting to change.</strong> A large, diverse and ever-changing team meant regularly adjusting to new ways of working.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROTOTYPE VIDEO ============ -->
+  <section class="cs-block">
+    <div class="container cs-feature">
+      <div class="cs-feature-text" data-reveal>
+        <span class="eyebrow">Extra</span>
+        <h2 class="cs-h2">Keynote prototype for a launch event.</h2>
+        <p class="cs-body">I built this prototype for an event announcing new functionality. The new features rewarded members for completing assessments, staying active and holding certain products, which together raised their discount on sports gear and apparel.</p>
+        <p class="cs-body">The prototype showed a realistic experience from the member's point of view, including the visuals, animations, interactions and overall flow.</p>
+      </div>
+      <figure class="cs-media cs-media--portrait" data-reveal>
+        <video src="assets/media/discovery/prototype.mp4" controls playsinline preload="metadata" aria-label="Keynote prototype of the Vitality Active Gear feature"></video>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ NEXT PROJECT ============ -->
+  <a href="case-vitality.html" class="case-next" data-cursor="link">
+    <div class="container case-next-inner">
+      <span class="eyebrow">Next project</span>
+      <span class="case-next-title">Vitality Group International — White-Label Rewards App</span>
+      <svg width="20" height="20" viewBox="0 0 16 16" fill="none" class="case-next-arrow"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+  </a>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© <span id="year"></span> Kiara Kruger. All rights reserved.</span>
+    <button class="back-to-top" id="backToTop" data-cursor="link">
+      Back to top
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M8 13V3M4 7l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <span>Designed &amp; built by Kiara Kruger</span>
+  </div>
+</footer>
+
+<!-- image lightbox -->
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close image">×</button>
+  <img id="lightboxImg" alt="" />
+</div>
+
+<script src="assets/js/content.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/case.js"></script>
+</body>
+</html>
