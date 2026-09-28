@@ -1481,3 +1481,5 @@ body::before {
 .cs-media--portrait { align-items: center; }
 .cs-media--portrait video { width: auto; max-width: 100%; max-height: 80vh; aspect-ratio: auto; background: #000; }
 .cs-media--bare img { background: none; }
+.cs-media--portrait.cs-video { position: relative; width: fit-content; max-width: 100%; margin: 0 auto; }
+.cs-media--portrait.cs-video video { aspect-ratio: 498 / 1080; height: min(80vh, 720px); width: auto; object-fit: contain; }
