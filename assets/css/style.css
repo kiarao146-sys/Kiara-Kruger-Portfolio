@@ -1596,3 +1596,16 @@ body::before {
   .profile-grid { grid-template-columns: 1fr; gap: 36px; }
   .profile-photo { position: relative; top: 0; width: 180px; }
 }
+
+/* project card image (until dedicated thumbnails are made) */
+.project-visual--thumb img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  box-shadow: 0 30px 60px -20px rgba(0,0,0,0.6);
+}
+.project-visual--bare img { aspect-ratio: auto; object-fit: contain; border: 0; background: none; box-shadow: none; }

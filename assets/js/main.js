@@ -68,8 +68,10 @@
             </a>
           </div>
         </div>
-        <div class="project-visual" data-tilt>
-          ${mockupMarkup(p.kind)}
+        <div class="project-visual${p.thumb ? " project-visual--thumb" : ""}${p.thumbBare ? " project-visual--bare" : ""}" data-tilt>
+          ${p.thumb
+            ? `<img src="${p.thumb}" alt="${p.thumbAlt || p.title}" loading="lazy" />`
+            : mockupMarkup(p.kind)}
         </div>
       </article>`
     ).join("");

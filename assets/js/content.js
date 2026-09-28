@@ -15,7 +15,8 @@ const SKILLS = [
  * Each project also feeds its own case-study page (project.html?slug=...).
  * "View case study" links are generated automatically from `slug` —
  * add a new project here and its detail page works immediately.
- * Set `href` instead to point a project at its own hand-built page.
+ * Set `href` instead to point a project at its own hand-built page,
+ * and `thumb` to show an image on its homepage card instead of the mockup.
  */
 const PROJECTS = [
   {
@@ -47,6 +48,8 @@ const PROJECTS = [
   },
   {
     slug: "bank-windhoek",
+    thumb: "assets/media/bank/cover.webp",
+    thumbAlt: "Bank Windhoek staff dashboard screens",
     href: "case-bank.html",
     tag: "Product Design · Design Systems",
     title: "Bank Windhoek — Digital Banking & Onboarding",
@@ -72,6 +75,9 @@ const PROJECTS = [
   },
   {
     slug: "discovery-vitality",
+    thumb: "assets/media/discovery/cover.webp",
+    thumbBare: true, // image has a transparent lower half, so skip the card frame
+    thumbAlt: "Vitality Active Rewards goal rings",
     href: "case-discovery.html",
     tag: "UX/UI · Mobile",
     title: "Discovery Vitality — Health & Wellness Rewards",
@@ -97,6 +103,8 @@ const PROJECTS = [
   },
   {
     slug: "vitality-group-international",
+    thumb: "assets/media/vitality/solution-white-label.webp",
+    thumbAlt: "Partner-branded versions of the Vitality app",
     // Has its own long-form page; cards and "next project" links go here instead of project.html
     href: "case-vitality.html",
     tag: "UX Research · Product Design",
