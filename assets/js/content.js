@@ -21,6 +21,7 @@ const SKILLS = [
 const PROJECTS = [
   {
     slug: "settly",
+    href: "case-settly.html",
     tag: "UX/UI · Product Design",
     title: "Settly — Relocation Platform",
     role: "Senior UX Designer",
@@ -41,7 +42,7 @@ const PROJECTS = [
       { value: "31→81%", label: "Mobile adoption" },
       { value: "50%", label: "Faster vendor response (34 to 17 hrs)" },
       { value: "40%", label: "Higher user retention" },
-      { value: "30%", label: "Manual effort cut via AI" }
+      { value: "~20%", label: "Less manual effort via AI drafting" }
     ],
     accent: "violet",
     kind: "browser"

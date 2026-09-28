@@ -1609,3 +1609,49 @@ body::before {
   box-shadow: 0 30px 60px -20px rgba(0,0,0,0.6);
 }
 .project-visual--bare img { aspect-ratio: auto; object-fit: contain; border: 0; background: none; box-shadow: none; }
+
+/* settly case study */
+.cs-steps--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 760px) { .cs-steps--3 { grid-template-columns: 1fr; } }
+.cs-placeholder {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 16 / 9;
+  max-width: 100%;
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--radius-lg);
+  background: repeating-linear-gradient(135deg, transparent 0 14px, rgba(255,255,255,0.02) 14px 28px), var(--bg-card);
+  color: var(--text-faint);
+  font-size: 14px;
+}
+.cs-impact { margin-top: 32px; display: flex; flex-direction: column; gap: 12px; max-width: 640px; }
+.cs-impact .eyebrow { margin-bottom: 0; }
+.cs-impact .cs-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.cs-impact .cs-stats--single { grid-template-columns: 1fr; max-width: 320px; }
+.cs-stats--four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+@media (max-width: 900px) { .cs-stats--four { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 480px) { .cs-impact .cs-stats, .cs-stats--four { grid-template-columns: 1fr; } }
+.cs-status { list-style: none; margin: 20px 0 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.cs-status li {
+  padding: 7px 14px;
+  border-radius: var(--radius-full);
+  font-size: 13px;
+  border: 1px solid var(--border-strong);
+  color: var(--text-muted);
+}
+.cs-status li + li { position: relative; margin-left: 22px; }
+.cs-status li + li::before { content: "→"; position: absolute; left: -22px; width: 22px; text-align: center; color: var(--text-faint); }
+.cs-status li:last-child { border-color: rgba(94, 230, 196, 0.4); color: var(--accent-2); }
+.cs-questions { list-style: none; margin: 20px 0 0; padding: 0; display: flex; flex-direction: column; gap: 8px; counter-reset: q; }
+.cs-questions li {
+  counter-increment: q;
+  display: flex; gap: 14px; align-items: baseline;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg-card);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
+  color: var(--text);
+}
+.cs-questions li::before { content: "0" counter(q); font-size: 12px; color: var(--accent-2); }
