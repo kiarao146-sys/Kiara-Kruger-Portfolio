@@ -956,16 +956,21 @@ body::before {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 20px 48px;
+  gap: 28px 64px;
 }
-.logos-row span {
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 18px;
-  color: var(--text-faint);
-  opacity: 0.6;
-  transition: opacity var(--dur-fast), color var(--dur-fast);
+.logos-row img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  opacity: 0.55;
+  transition: opacity var(--dur-fast);
 }
-.logos-row span:hover { opacity: 1; color: var(--text); }
+.logos-row img:hover { opacity: 1; }
+/* heights balanced by eye so each mark carries similar visual weight */
+.logos-row .logo-settly { height: 30px; }
+.logos-row .logo-bank { height: 22px; }
+.logos-row .logo-discovery { height: 48px; }
+.logos-row .logo-vitality { height: 40px; }
 
 /* ================= Contact ================= */
 .contact { position: relative; isolation: isolate; padding: 150px 0; text-align: center; }
