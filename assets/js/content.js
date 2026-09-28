@@ -15,6 +15,7 @@ const SKILLS = [
  * Each project also feeds its own case-study page (project.html?slug=...).
  * "View case study" links are generated automatically from `slug` —
  * add a new project here and its detail page works immediately.
+ * Set `href` instead to point a project at its own hand-built page.
  */
 const PROJECTS = [
   {
@@ -94,8 +95,10 @@ const PROJECTS = [
   },
   {
     slug: "vitality-group-international",
+    // Has its own long-form page; cards and "next project" links go here instead of project.html
+    href: "case-vitality.html",
     tag: "UX Research · Product Design",
-    title: "Vitality Group International — Global Wellness Platform",
+    title: "Vitality Group International — White-Label Rewards App",
     role: "UX/UI Designer",
     company: "Discovery Limited — Vitality Group International",
     period: "2017 — 2018",

@@ -66,6 +66,7 @@
     const index = PROJECTS.findIndex((p) => p.slug === slug);
     if (index === -1) { renderNotFound(); return; }
     const project = PROJECTS[index];
+    if (project.href) { window.location.replace(project.href); return; }
 
     document.title = `${project.title} — Kiara Kruger`;
 
@@ -114,7 +115,7 @@
     const nextProject = PROJECTS[(index + 1) % PROJECTS.length];
     const nextLink = document.getElementById("nextProjectLink");
     const nextTitle = document.getElementById("nextProjectTitle");
-    if (nextLink && nextProject) nextLink.href = `project.html?slug=${nextProject.slug}`;
+    if (nextLink && nextProject) nextLink.href = nextProject.href || `project.html?slug=${nextProject.slug}`;
     if (nextTitle && nextProject) nextTitle.textContent = nextProject.title;
   }
 

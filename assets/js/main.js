@@ -62,7 +62,7 @@
           <p class="project-desc">${p.description}</p>
           <div class="project-meta">
             <span class="project-period">${p.period}</span>
-            <a href="project.html?slug=${p.slug}" class="project-link" data-cursor="link">
+            <a href="${p.href || `project.html?slug=${p.slug}`}" class="project-link" data-cursor="link">
               View case study
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H5M12 4v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
