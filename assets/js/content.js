@@ -172,11 +172,10 @@ const EDUCATION = [
   {
     period: "2014 — 2017",
     title: "Bachelor's Degree in Interaction Design",
-    place: "The Open Window Institute, Pretoria"
+    place: "The Open Window Institute, South Africa"
   }
 ];
 
 const INTERESTS = [
-  "Photography", "Cycling", "Ceramics", "Travel",
-  "Specialty coffee", "Sketching", "Vinyl records", "Yoga"
+  "Weight lifting", "Painting & drawing", "Travel", "Music festivals", "Reading"
 ];
