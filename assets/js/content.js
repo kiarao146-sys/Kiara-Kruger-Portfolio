@@ -47,6 +47,7 @@ const PROJECTS = [
   },
   {
     slug: "bank-windhoek",
+    href: "case-bank.html",
     tag: "Product Design · Design Systems",
     title: "Bank Windhoek — Digital Banking & Onboarding",
     role: "Senior Product Designer",

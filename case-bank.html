@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bank Onboarding Redesign — Kiara Kruger</title>
+<meta name="description" content="Case study: redesigning Bank Windhoek's customer onboarding across staff tools, web and kiosk, cutting onboarding time by 30%." />
+
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="cs" data-accent-page="rose">
+
+<div class="scroll-progress" aria-hidden="true"><span id="scrollProgressBar"></span></div>
+
+<div class="cursor" id="cursor" aria-hidden="true">
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="index.html" class="logo" data-cursor="link">
+      <span class="logo-mark">KK</span>
+      <span class="logo-text">Kiara Kruger</span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="Primary">
+      <ul>
+        <li><a href="index.html#work" data-cursor="link">Work</a></li>
+        <li><a href="index.html#about" data-cursor="link">About</a></li>
+        <li><a href="index.html#services" data-cursor="link">Services</a></li>
+        <li><a href="index.html#contact" data-cursor="link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-meta">
+      <span class="local-clock" id="localClock" data-cursor="default">
+        <span class="clock-dot"></span>
+        <span id="clockCity">Netherlands</span> · <span id="clockTime">--:--</span>
+      </span>
+      <a href="index.html#contact" class="btn btn-ghost btn-sm header-cta" data-cursor="link">Let's talk</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" data-cursor="link">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="nav-mobile" id="navMobile">
+    <ul>
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <a href="mailto:kiarao146@gmail.com" class="nav-mobile-email">kiarao146@gmail.com</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="case-hero cs-hero">
+    <div class="grid-field" aria-hidden="true">
+      <div class="grid-field__base"></div>
+      <div class="grid-field__light"></div>
+      <div class="grid-field__glow"></div>
+    </div>
+    <div class="container">
+      <a href="index.html#work" class="back-link" data-cursor="link" data-reveal>
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M12 4L4 12M4 12H11M4 12V5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        All work
+      </a>
+
+      <span class="project-tag" data-reveal style="--d:1">Bank Windhoek · 2021 — 2024</span>
+      <h1 class="case-title" data-reveal style="--d:2">Opening a bank account without the paperwork.</h1>
+      <p class="case-summary" data-reveal style="--d:3">
+        As the sole product designer, I redesigned Bank Windhoek's customer onboarding from scratch:
+        replacing slow, manual processes with digital identity checks and a consistent experience
+        across staff tools, the website and in-branch kiosks.
+      </p>
+
+      <dl class="cs-facts" data-reveal style="--d:4">
+        <div><dt>Role</dt><dd>Senior Product Designer (sole designer)</dd></div>
+        <div><dt>Timeline</dt><dd>Sep 2021 — Aug 2024</dd></div>
+        <div><dt>Platform</dt><dd>Staff platform (AppWorks), responsive web, kiosk</dd></div>
+        <div><dt>Industry</dt><dd>Fintech · Banking</dd></div>
+        <div><dt>Tools</dt><dd>Figma, Illustrator, After Effects, Miro, Azure DevOps</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ COVER ============ -->
+  <section class="cs-block cs-block--flush">
+    <div class="container">
+      <figure class="cs-media cs-media--wide" data-reveal>
+        <img src="assets/media/bank/cover.webp" alt="Collage of redesigned Bank Windhoek staff screens: customer dashboard, credit score gauge, habits and behaviours charts" />
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ AT A GLANCE ============ -->
+  <section class="cs-block">
+    <div class="container cs-glance">
+      <div class="cs-glance-text" data-reveal>
+        <span class="eyebrow">At a glance</span>
+        <p class="cs-lead">
+          Opening an account at Bank Windhoek meant manual steps, slow software and a trip to a branch.
+          I led the design end to end, from research to a new design system, to make onboarding faster
+          for customers and simpler for the staff serving them.
+        </p>
+      </div>
+      <div class="cs-stats cs-stats--single" data-reveal>
+        <div class="cs-stat"><span class="cs-stat-num">30%</span><span class="cs-stat-label">Faster customer onboarding</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROBLEM ============ -->
+  <section class="cs-block">
+    <div class="container">
+      <div class="cs-head" data-reveal>
+        <span class="eyebrow">The problem</span>
+        <h2 class="cs-h2">Slow for customers, frustrating for staff.</h2>
+        <p class="cs-body">Onboarding was a problem for the business and its users. Outdated, slow software and manual methods made everyday tasks time-consuming for employees and customers alike.</p>
+      </div>
+      <ul class="cs-needs cs-needs--row" data-reveal>
+        <li>Manual, complex and time-consuming processes and workflows.</li>
+        <li>An outdated, inconsistent interface that was hard to use.</li>
+        <li>Customers had to visit a branch to open accounts, manage products or update their profile.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ ROLE & CONSTRAINTS ============ -->
+  <section class="cs-block">
+    <div class="container cs-two">
+      <div data-reveal>
+        <span class="eyebrow">My role</span>
+        <h3 class="cs-h3">Sole product designer and design advocate.</h3>
+        <p class="cs-body">I was the only product designer, working across several cross-functional agile teams for different product offerings, with members from business, product and development.</p>
+        <ul class="cs-tags">
+          <li>User research</li>
+          <li>Wireframes</li>
+          <li>Multi-channel UI design</li>
+          <li>Prototypes</li>
+          <li>Animated illustration library</li>
+        </ul>
+      </div>
+      <div data-reveal>
+        <span class="eyebrow">Constraints</span>
+        <h3 class="cs-h3">A fixed platform and tight timelines.</h3>
+        <p class="cs-body">The staff interface was built on the AppWorks platform, which limited what could be developed. Combined with tight project timelines, that narrowed what was feasible to build, so designs had to work within the platform rather than around it.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS OVERVIEW ============ -->
+  <section class="cs-block" id="process">
+    <div class="container">
+      <div class="cs-head" data-reveal>
+        <span class="eyebrow">Process</span>
+        <h2 class="cs-h2">Four phases, with the last one never finished.</h2>
+      </div>
+      <ol class="cs-steps cs-steps--4" data-reveal>
+        <li><a href="#research" data-cursor="link"><span class="cs-step-num">01</span><span>Research</span></a></li>
+        <li><a href="#ideate" data-cursor="link"><span class="cs-step-num">02</span><span>Ideate</span></a></li>
+        <li><a href="#design" data-cursor="link"><span class="cs-step-num">03</span><span>Design</span></a></li>
+        <li><a href="#maintain" data-cursor="link"><span class="cs-step-num">04</span><span>Maintenance &amp; rework</span></a></li>
+      </ol>
+      <figure class="cs-media cs-media--wide" data-reveal>
+        <img src="assets/media/bank/process.webp" alt="Process flow: 01 Research (problem statement, competitor analysis, user needs and pain points), 02 Ideate (storyboarding, wireframing, workshops), 03 Design (prototyping, high-fidelity screens, user flows, design system), 04 Maintenance and rework (maintain the design system, update designs)" loading="lazy" />
+      </figure>
+    </div>
+  </section>
+
+  <!-- 01 RESEARCH -->
+  <section class="cs-block cs-phase" id="research">
+    <div class="container">
+      <div class="cs-head" data-reveal>
+        <span class="eyebrow">01 · Research</span>
+        <h2 class="cs-h2">Understand today's process before changing it.</h2>
+        <p class="cs-body">I examined the bank's current processes, workflows and interface to find what needed attention and where the biggest opportunities were.</p>
+      </div>
+      <div class="cs-grid4 cs-grid3">
+        <div class="cs-item" data-reveal><h4>Problem statements</h4><p>Defined the problems for the business, bank staff and customers.</p></div>
+        <div class="cs-item" data-reveal><h4>User feedback</h4><p>Gathered feedback from the bank's existing customers and staff.</p></div>
+        <div class="cs-item" data-reveal><h4>Competitor analysis</h4><p>Studied how other African banks onboard their customers.</p></div>
+        <div class="cs-item" data-reveal><h4>User types</h4><p>Mapped six user types, from students and parents to people moving banks, with their needs and pain points.</p></div>
+        <div class="cs-item" data-reveal><h4>Platform limits</h4><p>Learned the constraints of the AppWorks platform before designing for it.</p></div>
+        <div class="cs-item" data-reveal><h4>UI trends</h4><p>Reviewed current UI trends and patterns in banking.</p></div>
+      </div>
+      <figure class="cs-media" data-reveal>
+        <img src="assets/media/bank/research.webp" alt="Research summary: six user types (parents, students, newly employed, moving banks, existing clients, group saves) and the needs and pain points of bank customers and bank staff" loading="lazy" />
+        <figcaption>User types, and the needs and pain points of customers and bank staff.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 02 IDEATE -->
+  <section class="cs-block cs-phase" id="ideate">
+    <div class="container">
+      <div class="cs-head" data-reveal>
+        <span class="eyebrow">02 · Ideate</span>
+        <h2 class="cs-h2">Map every step, including the ones that fail.</h2>
+        <p class="cs-body">I ran workshops with the team to understand business requirements, features and product specs. I then mapped each stage of onboarding in user flows, including alternate paths and success and failure states, and turned them into low-fidelity wireframes.</p>
+      </div>
+      <figure class="cs-media" data-reveal>
+        <img src="assets/media/bank/ideate.webp" alt="User flow diagram for onboarding: scan customer ID, capture biometrics, verify identity, capture basic information and verify the mobile number with a one-time PIN, with success and failure paths" loading="lazy" />
+        <figcaption>Onboarding user flow: ID scan, selfie verification and one-time PIN, with success and failure states.</figcaption>
+      </figure>
+      <div class="cs-gallery3">
+        <figure class="cs-media" data-reveal>
+          <img src="assets/media/bank/wire-onboarding.webp" alt="Wireframe sketch: customer onboarding with a five-step progress bar, main workspace and a checklist panel" loading="lazy" />
+          <figcaption>Customer onboarding</figcaption>
+        </figure>
+        <figure class="cs-media" data-reveal>
+          <img src="assets/media/bank/wire-dashboard.webp" alt="Wireframe sketch: staff dashboard with a greeting, four cards, favourites and recently accessed" loading="lazy" />
+          <figcaption>Staff dashboard</figcaption>
+        </figure>
+        <figure class="cs-media" data-reveal>
+          <img src="assets/media/bank/wire-customer360.webp" alt="Wireframe sketch: Customer 360 profile with cards, personal information, financial summary, payment profile and compliance" loading="lazy" />
+          <figcaption>Customer 360</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 DESIGN -->
+  <section class="cs-block cs-phase" id="design">
+    <div class="container">
+      <div class="cs-head" data-reveal>
+        <span class="eyebrow">03 · Design</span>
+        <h2 class="cs-h2">A new visual language, built as a system.</h2>
+      </div>
+      <div class="cs-grid4 cs-grid3">
+        <div class="cs-item" data-reveal><h4>UI style</h4><p>Built a fresh visual language on top of the existing brand and Material Design guidelines.</p></div>
+        <div class="cs-item" data-reveal><h4>Accessible colour</h4><p>Led a review of how colour was used digitally, following UX best practice and accessibility standards.</p></div>
+        <div class="cs-item" data-reveal><h4>Design system</h4><p>Created UI components and guidelines for reuse and consistency across digital platforms.</p></div>
+        <div class="cs-item" data-reveal><h4>Illustration library</h4><p>Created a custom illustration style and library for the UI, and animated it to add moments of delight.</p></div>
+        <div class="cs-item" data-reveal><h4>High-fidelity screens</h4><p>Turned the wireframes into polished screens in the new visual language.</p></div>
+        <div class="cs-item" data-reveal><h4>Prototypes</h4><p>Built working prototypes to show both the functionality and the experience.</p></div>
+      </div>
+      <figure class="cs-media" data-reveal>
+        <img src="assets/media/bank/design.webp" alt="Collage of final screens: application steps, selfie capture, ID upload, one-time PIN, card selection and kiosk welcome screen" loading="lazy" />
+      </figure>
+
+      <div class="cs-head cs-head--sub" data-reveal>
+        <h3 class="cs-h3">What shaped the design</h3>
+      </div>
+      <div class="cs-feature">
+        <div class="cs-grid2" data-reveal>
+          <div class="cs-item"><h4>Platform limits</h4><p>Stayed within AppWorks and avoided heavily customised UI that might not be buildable.</p></div>
+          <div class="cs-item"><h4>Design principles</h4><p>Prioritised familiarity, clarity and user control throughout.</p></div>
+          <div class="cs-item"><h4>Material Design</h4><p>Built the base design on Material Design components and guidelines.</p></div>
+          <div class="cs-item"><h4>User feedback</h4><p>Used feedback to set the hierarchy and priority of information and features.</p></div>
+        </div>
+        <figure class="cs-media cs-video" data-reveal>
+          <video src="assets/media/bank/informed.mp4" poster="assets/media/bank/informed-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Animation cycling through platform restrictions, design principles, Material Design and user feedback over the staff dashboard"></video>
+          <button class="cs-video-toggle" type="button" aria-label="Pause video" data-cursor="link">Pause</button>
+        </figure>
+      </div>
+
+      <figure class="cs-media cs-media--wide cs-spaced" data-reveal>
+        <img src="assets/media/bank/versions.webp" alt="Four versions of the product selection step, from a simple modal to the final stepped application with progress status" loading="lazy" />
+        <figcaption><strong>Product selection, versions 01 to 04.</strong> Feedback moved it from a pop-up question to a guided step with progress in view.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 04 MAINTAIN -->
+  <section class="cs-block cs-phase" id="maintain">
+    <div class="container">
+      <div class="cs-head" data-reveal>
+        <span class="eyebrow">04 · Maintenance &amp; rework</span>
+        <h2 class="cs-h2">Keeping the system alive.</h2>
+        <p class="cs-body">This phase never ends. I maintain the design system, revisit UX or UI based on user and business feedback, and extend features as new requirements come in.</p>
+      </div>
+      <figure class="cs-media" data-reveal>
+        <img src="assets/media/bank/maintenance.webp" alt="Design system pages: colour palette, typography scale, form fields and navigation and progress bars" loading="lazy" />
+        <figcaption>The design system: colour, typography, forms and navigation.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ SOLUTION ============ -->
+  <section class="cs-block">
+    <div class="container">
+      <div class="cs-head" data-reveal>
+        <span class="eyebrow">The solution</span>
+        <h2 class="cs-h2">Faster onboarding on every channel.</h2>
+        <p class="cs-body">Research and user feedback solved the core business and user problems, and surfaced insights that improved the product and the bank's workflows too.</p>
+      </div>
+      <figure class="cs-media cs-media--wide" data-reveal>
+        <img src="assets/media/bank/solution-user-centric.webp" alt="User-centric design. Designs tailored to the needs, preferences and pain points of both customers and bank employees. Shown: the Customer Dashboard with customer information, products, risk profile and compliance." loading="lazy" />
+      </figure>
+      <figure class="cs-media cs-media--wide" data-reveal>
+        <img src="assets/media/bank/solution-onboarding.webp" alt="Streamlined onboarding. Account opening simplified by replacing manual processes with digital identity verification. Shown: the Capture the Customer's Identity Document step with a passport in frame." loading="lazy" />
+      </figure>
+      <figure class="cs-media cs-media--wide" data-reveal>
+        <img src="assets/media/bank/solution-multichannel.webp" alt="Intuitive multichannel experience. A consistent experience across web, mobile and in-branch. Shown: Let's Get Started on mobile web and desktop, and the staff Personal Application form." loading="lazy" />
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ BEFORE / AFTER ============ -->
+  <section class="cs-block">
+    <div class="container">
+      <div class="cs-head" data-reveal>
+        <span class="eyebrow">Before &amp; after</span>
+        <h2 class="cs-h2">Five screens, redesigned.</h2>
+        <p class="cs-body">Examples of improvements across the staff platform and the website.</p>
+      </div>
+
+      <article class="cs-ba" data-reveal>
+        <figure class="cs-media">
+          <img src="assets/media/bank/ba-customer-info.webp" alt="Before: a dense legacy form. After: a sectioned Personal Application form with progress status" loading="lazy" />
+        </figure>
+        <h3 class="cs-h3"><span class="cs-ba-num">01</span> Staff platform: capture basic customer information</h3>
+        <div class="cs-compare">
+          <ul class="cs-compare-before"><li>Outdated interface with poor UI</li><li>Unclear hierarchy of fields</li></ul>
+          <ul class="cs-compare-after"><li>Updated, clean interface</li><li>Reworked hierarchy and content sections</li></ul>
+        </div>
+      </article>
+
+      <article class="cs-ba" data-reveal>
+        <figure class="cs-media">
+          <img src="assets/media/bank/ba-relationship.webp" alt="Before: a relationship setup screen with search tables. After: an Add a Relationship step in Customer 360" loading="lazy" />
+        </figure>
+        <h3 class="cs-h3"><span class="cs-ba-num">02</span> Staff platform: add a relationship to a customer profile</h3>
+        <div class="cs-compare">
+          <ul class="cs-compare-before"><li>No context or instructions</li><li>No clear path, with too many actions on one screen</li></ul>
+          <ul class="cs-compare-after"><li>Supporting copy to guide users</li><li>Actions split into clear, manageable steps</li></ul>
+        </div>
+      </article>
+
+      <article class="cs-ba" data-reveal>
+        <figure class="cs-media">
+          <img src="assets/media/bank/ba-product.webp" alt="Before: two plain product tables. After: product search with filters and card images" loading="lazy" />
+        </figure>
+        <h3 class="cs-h3"><span class="cs-ba-num">03</span> Staff platform: add a new product</h3>
+        <div class="cs-compare">
+          <ul class="cs-compare-before"><li>No search or filtering</li><li>No supporting information or visuals</li></ul>
+          <ul class="cs-compare-after"><li>Product search and filters</li><li>Key benefits and card images for quick scanning</li></ul>
+        </div>
+      </article>
+
+      <article class="cs-ba" data-reveal>
+        <figure class="cs-media">
+          <img src="assets/media/bank/ba-web-application.webp" alt="Before: the old Apply Online form on the website. After: a Let's Get Started step and a Tell Us About Yourself form" loading="lazy" />
+        </figure>
+        <h3 class="cs-h3"><span class="cs-ba-num">04</span> Website (desktop): start a new product application</h3>
+        <div class="cs-compare">
+          <ul class="cs-compare-before"><li>Outdated interface with poor UI</li><li>Unclear hierarchy of fields</li></ul>
+          <ul class="cs-compare-after"><li>Updated, clean interface</li><li>Reworked hierarchy and content sections</li></ul>
+        </div>
+      </article>
+
+      <article class="cs-ba" data-reveal>
+        <figure class="cs-media">
+          <img src="assets/media/bank/ba-mobile-products.webp" alt="Before: long text-heavy mobile product pages. After: product search with filters and a Transaction Account detail page" loading="lazy" />
+        </figure>
+        <h3 class="cs-h3"><span class="cs-ba-num">05</span> Website (mobile): browse products and details</h3>
+        <div class="cs-compare">
+          <ul class="cs-compare-before"><li>Outdated interface with poor UI</li><li>Unclear hierarchy of information</li></ul>
+          <ul class="cs-compare-after"><li>Updated, clean interface</li><li>Reworked hierarchy and content sections</li></ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ OUTCOMES + LEARNINGS ============ -->
+  <section class="cs-block">
+    <div class="container cs-two">
+      <div data-reveal>
+        <span class="eyebrow">Outcome</span>
+        <h2 class="cs-h2">Customers onboarded faster.</h2>
+        <div class="cs-stats cs-stats--single cs-stats--stack">
+          <div class="cs-stat"><span class="cs-stat-num">30%</span><span class="cs-stat-label">Reduction in customer onboarding time</span></div>
+        </div>
+      </div>
+      <div data-reveal>
+        <span class="eyebrow">What I learned</span>
+        <ul class="cs-learnings">
+          <li><strong>Building from scratch, alone.</strong> I'd been a sole designer before, but never had to create everything from nothing. I guided the process end to end and kept advocating for users.</li>
+          <li><strong>Freedom has its own challenges.</strong> Leading with little design input or support showed me that full creative freedom is harder than it sounds, and how much the research phase matters.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ KIOSK VIDEO ============ -->
+  <!-- Hidden until assets/media/bank/kiosk.mp4 is added: remove the comment markers to show it.
+  <section class="cs-block">
+    <div class="container">
+      <div class="cs-head" data-reveal>
+        <span class="eyebrow">Extra</span>
+        <h2 class="cs-h2">Self-service kiosk: changing a card PIN.</h2>
+        <p class="cs-body">A guided video showing customers how to use the Change card PIN feature on the in-branch self-service kiosk.</p>
+      </div>
+      <figure class="cs-media cs-media-wide" data-reveal>
+        <video src="assets/media/bank/kiosk.mp4" controls playsinline preload="metadata" aria-label="Guided video of changing a card PIN on the self-service kiosk"></video>
+      </figure>
+    </div>
+  </section>
+  -->
+
+  <!-- ============ NEXT PROJECT ============ -->
+  <a href="case-discovery.html" class="case-next" data-cursor="link">
+    <div class="container case-next-inner">
+      <span class="eyebrow">Next project</span>
+      <span class="case-next-title">Discovery Vitality — Health &amp; Wellness Rewards</span>
+      <svg width="20" height="20" viewBox="0 0 16 16" fill="none" class="case-next-arrow"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+  </a>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© <span id="year"></span> Kiara Kruger. All rights reserved.</span>
+    <button class="back-to-top" id="backToTop" data-cursor="link">
+      Back to top
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M8 13V3M4 7l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <span>Designed &amp; built by Kiara Kruger</span>
+  </div>
+</footer>
+
+<!-- image lightbox -->
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close image">×</button>
+  <img id="lightboxImg" alt="" />
+</div>
+
+<script src="assets/js/content.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/case.js"></script>
+</body>
+</html>

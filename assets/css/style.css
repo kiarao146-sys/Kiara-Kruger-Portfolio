@@ -1483,3 +1483,51 @@ body::before {
 .cs-media--bare img { background: none; }
 .cs-media--portrait.cs-video { position: relative; width: fit-content; max-width: 100%; margin: 0 auto; }
 .cs-media--portrait.cs-video video { aspect-ratio: 498 / 1080; height: min(80vh, 720px); width: auto; object-fit: contain; }
+
+/* bank case study */
+.cs-steps--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+@media (max-width: 900px) { .cs-steps--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.cs-grid3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 900px) { .cs-grid3 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .cs-grid3 { grid-template-columns: 1fr; } }
+.cs-grid2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: var(--radius-md); overflow: hidden; }
+@media (max-width: 520px) { .cs-grid2 { grid-template-columns: 1fr; } }
+.cs-gallery3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; margin-top: 32px; }
+.cs-gallery3 .cs-media + .cs-media { margin-top: 0; }
+.cs-gallery3 img { border-radius: var(--radius-md); }
+@media (max-width: 760px) { .cs-gallery3 { grid-template-columns: 1fr; } }
+.cs-head--sub { margin: 64px 0 24px; }
+.cs-spaced { margin-top: 56px; }
+.cs-feature > .cs-grid2 { align-self: center; }
+
+.cs-ba + .cs-ba { margin-top: 72px; padding-top: 72px; border-top: 1px solid var(--border); }
+.cs-ba .cs-h3 { margin: 28px 0 18px; display: flex; gap: 12px; align-items: baseline; }
+.cs-ba-num { font-family: "Space Grotesk", sans-serif; font-size: 13px; color: var(--accent-2); flex-shrink: 0; }
+.cs-compare { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.cs-compare ul { display: flex; flex-direction: column; gap: 10px; }
+.cs-compare li {
+  position: relative;
+  padding: 14px 16px 14px 44px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text);
+}
+.cs-compare li::before {
+  position: absolute; left: 16px; top: 13px;
+  width: 18px; text-align: center;
+  font-weight: 700;
+}
+.cs-compare-before li { background: rgba(239, 140, 168, 0.08); border: 1px solid rgba(239, 140, 168, 0.2); }
+.cs-compare-before li::before { content: "✕"; color: var(--accent-rose); }
+.cs-compare-after li { background: rgba(94, 230, 196, 0.07); border: 1px solid rgba(94, 230, 196, 0.2); }
+.cs-compare-after li::before { content: "✓"; color: var(--accent-2); }
+.cs-compare ul::before {
+  display: block;
+  font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 2px;
+}
+.cs-compare-before::before { content: "Before"; }
+.cs-compare-after::before { content: "After"; }
+@media (max-width: 640px) { .cs-compare { grid-template-columns: 1fr; } }
