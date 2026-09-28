@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Case Study — Kiara Kruger</title>
+<meta name="description" content="A case study by Kiara Kruger, Senior UX/UI Designer." />
+
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<!-- scroll progress -->
+<div class="scroll-progress" aria-hidden="true"><span id="scrollProgressBar"></span></div>
+
+<!-- custom cursor (desktop only, see main.js) -->
+<div class="cursor" id="cursor" aria-hidden="true">
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="index.html" class="logo" data-cursor="link">
+      <span class="logo-mark">KK</span>
+      <span class="logo-text">Kiara Kruger</span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="Primary">
+      <ul>
+        <li><a href="index.html#work" data-cursor="link">Work</a></li>
+        <li><a href="index.html#about" data-cursor="link">About</a></li>
+        <li><a href="index.html#services" data-cursor="link">Services</a></li>
+        <li><a href="index.html#contact" data-cursor="link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-meta">
+      <span class="local-clock" id="localClock" data-cursor="default">
+        <span class="clock-dot"></span>
+        <span id="clockCity">Netherlands</span> · <span id="clockTime">--:--</span>
+      </span>
+      <a href="index.html#contact" class="btn btn-ghost btn-sm header-cta" data-cursor="link">Let's talk</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" data-cursor="link">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="nav-mobile" id="navMobile">
+    <ul>
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <a href="mailto:kiarao146@gmail.com" class="nav-mobile-email">kiarao146@gmail.com</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ CASE HERO ============ -->
+  <section class="case-hero" id="caseHero">
+    <div class="grid-field" aria-hidden="true">
+      <div class="grid-field__base"></div>
+      <div class="grid-field__light"></div>
+      <div class="grid-field__glow"></div>
+    </div>
+    <div class="container">
+      <a href="index.html#work" class="back-link" data-cursor="link" data-reveal>
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M12 4L4 12M4 12H11M4 12V5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        All work
+      </a>
+
+      <span class="project-tag" id="caseTag" data-reveal style="--d:1"></span>
+      <h1 class="case-title" id="caseTitle" data-reveal style="--d:2"></h1>
+      <p class="case-summary" id="caseSummary" data-reveal style="--d:3"></p>
+
+      <div class="case-meta" id="caseMeta" data-reveal style="--d:4"></div>
+    </div>
+  </section>
+
+  <!-- ============ CASE VISUAL ============ -->
+  <section class="case-visual-section">
+    <div class="container">
+      <div class="project-visual case-visual" data-tilt data-reveal id="caseVisual"></div>
+    </div>
+  </section>
+
+  <!-- ============ CASE CONTENT ============ -->
+  <section class="case-content">
+    <div class="container case-content-grid">
+      <div class="case-content-main">
+        <h2 class="case-heading" data-reveal>The challenge</h2>
+        <p class="case-prose" id="caseChallenge" data-reveal></p>
+
+        <h2 class="case-heading" data-reveal>My approach</h2>
+        <ul class="approach-list" id="caseApproach"></ul>
+      </div>
+
+      <aside class="case-results" id="caseResultsWrap" data-reveal>
+        <h3 class="case-results-title">Impact</h3>
+        <div class="results-grid" id="resultsGrid"></div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ NEXT PROJECT ============ -->
+  <a href="#" class="case-next" id="nextProjectLink" data-cursor="link">
+    <div class="container case-next-inner">
+      <span class="eyebrow">Next project</span>
+      <span class="case-next-title" id="nextProjectTitle"></span>
+      <svg width="20" height="20" viewBox="0 0 16 16" fill="none" class="case-next-arrow"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+  </a>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="grid-field" aria-hidden="true">
+      <div class="grid-field__base"></div>
+      <div class="grid-field__light"></div>
+      <div class="grid-field__glow"></div>
+    </div>
+    <div class="container">
+      <div class="contact-inner" data-reveal>
+        <span class="eyebrow">Get in touch</span>
+        <h2 class="contact-title">
+          Let's build something<br class="br-desktop"> people actually <em>enjoy using.</em>
+        </h2>
+        <a href="mailto:kiarao146@gmail.com" class="contact-email" data-cursor="link">
+          kiarao146@gmail.com
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" class="contact-email-icon"><path d="M7 17L17 7M17 7H8M17 7v9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+
+        <div class="contact-socials">
+          <a href="https://www.linkedin.com/in/kiara-kruger" target="_blank" rel="noopener" data-cursor="link">LinkedIn</a>
+          <a href="#" data-cursor="link">Dribbble</a>
+          <a href="#" data-cursor="link">Behance</a>
+          <a href="#" data-cursor="link">Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© <span id="year"></span> Kiara Kruger. All rights reserved.</span>
+    <button class="back-to-top" id="backToTop" data-cursor="link">
+      Back to top
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M8 13V3M4 7l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <span>Designed &amp; built by Kiara Kruger</span>
+  </div>
+</footer>
+
+<script src="assets/js/content.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/project.js"></script>
+</body>
+</html>
