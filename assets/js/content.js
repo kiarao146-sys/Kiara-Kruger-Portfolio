@@ -78,9 +78,8 @@ const PROJECTS = [
   },
   {
     slug: "discovery-vitality",
-    thumb: "assets/media/discovery/cover.webp",
-    thumbBare: true, // image has a transparent lower half, so skip the card frame
-    thumbAlt: "Vitality Active Rewards goal rings",
+    thumb: "assets/media/discovery/thumb.webp",
+    thumbAlt: "Vitality Active Gear discount, Active Rewards goal rings and the gameboard",
     href: "case-discovery.html",
     tag: "UX/UI · Mobile",
     title: "Discovery Vitality — Health & Wellness Rewards",
@@ -106,8 +105,8 @@ const PROJECTS = [
   },
   {
     slug: "vitality-group-international",
-    thumb: "assets/media/vitality/solution-white-label.webp",
-    thumbAlt: "Partner-branded versions of the Vitality app",
+    thumb: "assets/media/vitality/thumb.webp",
+    thumbAlt: "Vitality app screens: status, My Health and the For You feed",
     // Has its own long-form page; cards and "next project" links go here instead of project.html
     href: "case-vitality.html",
     tag: "UX Research · Product Design",

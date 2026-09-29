@@ -1601,8 +1601,7 @@ body::before {
 .project-visual--thumb img {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
+  height: auto;
   border-radius: var(--radius-md);
   border: 1px solid var(--border);
   background: var(--bg-elevated);
