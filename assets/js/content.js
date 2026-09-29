@@ -22,6 +22,8 @@ const PROJECTS = [
   {
     slug: "settly",
     href: "case-settly.html",
+    thumb: "assets/media/settly/cover.webp",
+    thumbAlt: "Collage of Settly platform and app screens",
     tag: "UX/UI · Product Design",
     title: "Settly — Relocation Platform",
     role: "Senior UX Designer",
