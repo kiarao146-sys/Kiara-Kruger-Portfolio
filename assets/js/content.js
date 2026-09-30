@@ -187,5 +187,5 @@ const EDUCATION = [
 ];
 
 const INTERESTS = [
-  "Weight lifting", "Painting & drawing", "Travel", "Music festivals", "Reading"
+  "Weight lifting", "Painting & drawing", "Travel", "Music festivals", "Reading", "Health & fitness", "Time with my fur babies"
 ];
