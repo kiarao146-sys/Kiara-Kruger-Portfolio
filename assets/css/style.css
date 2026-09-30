@@ -310,13 +310,25 @@ body::before {
   display: flex;
   align-items: center;
   border-bottom: 1px solid transparent;
-  transition: background var(--dur-med) var(--ease-soft), border-color var(--dur-med), backdrop-filter var(--dur-med);
+  transition: border-color var(--dur-med);
 }
-.site-header.is-scrolled {
+/* The blurred bar lives on a pseudo-element: a backdrop-filter on the header
+   itself would trap the fixed mobile menu inside the 76px header. */
+.site-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
   background: rgba(8, 8, 10, 0.72);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
   backdrop-filter: blur(14px) saturate(140%);
-  border-bottom-color: var(--border);
+  opacity: 0;
+  transition: opacity var(--dur-med) var(--ease-soft);
+  pointer-events: none;
 }
+.site-header.is-scrolled { border-bottom-color: var(--border); }
+.site-header.is-scrolled::before,
+.site-header:has(.nav-mobile.is-open)::before { opacity: 1; }
 .header-inner {
   width: 100%;
   display: flex;
@@ -414,7 +426,7 @@ body::before {
   font-size: 34px;
   border-bottom: 1px solid var(--border);
 }
-.nav-mobile-email { color: var(--text-muted); font-size: 15px; }
+.nav-mobile .nav-mobile-email { font-family: inherit; font-size: 15px; color: var(--text-muted); padding: 0; border-bottom: 0; }
 
 /* ================= Hero ================= */
 .hero {
