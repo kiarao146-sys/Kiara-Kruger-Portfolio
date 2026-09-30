@@ -1,6 +1,6 @@
 /*
  * Editable content.
- * Swap the arrays below with your real skills and case studies —
+ * Swap the arrays below with your real skills and case studies -
  * the markup and styling will pick up any changes automatically.
  */
 
@@ -13,7 +13,7 @@ const SKILLS = [
 
 /*
  * Each project also feeds its own case-study page (project.html?slug=...).
- * "View case study" links are generated automatically from `slug` —
+ * "View case study" links are generated automatically from `slug` -
  * add a new project here and its detail page works immediately.
  * Set `href` instead to point a project at its own hand-built page,
  * and `thumb` to show an image on its homepage card instead of the mockup.
@@ -25,16 +25,16 @@ const PROJECTS = [
     thumb: "assets/media/settly/cover.webp",
     thumbAlt: "Collage of Settly platform and app screens",
     tag: "Product Design · B2B2C · Web app · Mobile",
-    title: "Settly — Relocation Platform",
+    title: "Settly - Relocation Platform",
     role: "Senior UX Designer",
     company: "Settly",
-    period: "2024 — Now",
+    period: "2024 - Now",
     description:
       "Led end-to-end design across web and mobile for a B2B2C relocation platform, lifting mobile adoption from 31% to 81% and cutting vendor response times by 50%.",
     challenge:
-      "Settly's relocation platform serves three very different audiences through one product — HR teams managing relocations, internal operations teams delivering services, and relocating employees trying to get through a stressful move. The experience needed to feel simple for each of them without fragmenting into three separate products.",
+      "Settly's relocation platform serves three very different audiences through one product - HR teams managing relocations, internal operations teams delivering services, and relocating employees trying to get through a stressful move. The experience needed to feel simple for each of them without fragmenting into three separate products.",
     approach: [
-      "Led end-to-end design across all three audiences — discovery, research, prototyping, testing and delivery.",
+      "Led end-to-end design across all three audiences - discovery, research, prototyping, testing and delivery.",
       "Redesigned key mobile and web journeys to lift adoption and reduce drop-off.",
       "Designed a centralised vendor communication platform to speed up response times.",
       "Designed AI-assisted messaging and policy management experiences to reduce manual effort.",
@@ -55,10 +55,10 @@ const PROJECTS = [
     thumbAlt: "Bank Windhoek staff dashboard screens",
     href: "case-bank.html",
     tag: "Product Design · B2B · B2C · Web app · Kiosk",
-    title: "Bank Windhoek — Digital Banking & Onboarding",
+    title: "Bank Windhoek - Digital Banking & Onboarding",
     role: "Senior Product Designer",
-    company: "Capricorn Group — Bank Windhoek",
-    period: "2021 — 2024",
+    company: "Capricorn Group - Bank Windhoek",
+    period: "2021 - 2024",
     description:
       "Streamlined the end-to-end digital onboarding journey and built a scalable Figma design system, reducing onboarding time by 30%.",
     challenge:
@@ -82,14 +82,14 @@ const PROJECTS = [
     thumbAlt: "Vitality Active Gear discount, Active Rewards goal rings and the gameboard",
     href: "case-discovery.html",
     tag: "UX/UI · B2C · Mobile",
-    title: "Discovery Vitality — Health & Wellness Rewards",
+    title: "Discovery Vitality - Health & Wellness Rewards",
     role: "UX/UI Designer",
-    company: "Discovery Limited — Discovery Vitality ZA",
-    period: "2019 — 2021",
+    company: "Discovery Limited - Discovery Vitality ZA",
+    period: "2019 - 2021",
     description:
       "Designed gamified mobile experiences that grew app engagement by 20%, using usability testing and behavioural insight to guide the roadmap.",
     challenge:
-      "Vitality's rewards programme needed to keep members engaged long-term — turning healthy habits into an ongoing, gamified experience rather than a one-time sign-up, across a large and diverse member base.",
+      "Vitality's rewards programme needed to keep members engaged long-term - turning healthy habits into an ongoing, gamified experience rather than a one-time sign-up, across a large and diverse member base.",
     approach: [
       "Designed gamified health and rewards experiences that encouraged continued participation.",
       "Identified user pain points through usability testing, behavioural insight and competitor research.",
@@ -110,14 +110,14 @@ const PROJECTS = [
     // Has its own long-form page; cards and "next project" links go here instead of project.html
     href: "case-vitality.html",
     tag: "UX/UI · B2C · Mobile",
-    title: "Vitality Group International — White-Label Rewards App",
+    title: "Vitality Group International - White-Label Rewards App",
     role: "UX/UI Designer",
-    company: "Discovery Limited — Vitality Group International",
-    period: "2017 — 2018",
+    company: "Discovery Limited - Vitality Group International",
+    period: "2017 - 2018",
     description:
       "Adapted a configurable wellness platform for international insurance partners, lifting retention by 25% and cutting support enquiries by 15%.",
     challenge:
-      "The same wellness platform needed to work for insurance partners and their members across multiple international markets, each with different cultural expectations and business rules — without rebuilding it from scratch for every partner.",
+      "The same wellness platform needed to work for insurance partners and their members across multiple international markets, each with different cultural expectations and business rules - without rebuilding it from scratch for every partner.",
     approach: [
       "Improved the mobile experience and accessibility for international markets.",
       "Used research and user data to adapt experiences to different cultural and behavioural needs.",
@@ -134,13 +134,13 @@ const PROJECTS = [
 ];
 
 /*
- * Real LinkedIn recommendations. Full text of each is longer —
+ * Real LinkedIn recommendations. Full text of each is longer -
  * trimmed here to the strongest 2-3 sentences for card readability.
  */
 const TESTIMONIALS = [
   {
     quote:
-      "Kiara has a rare combination of skills: sharp creative instinct paired with genuine proactivity. She didn't wait to be told what needed solving — she talked to clients, spotted friction points before anyone else did, and came back with original, well-considered solutions. I would rehire her without a second thought.",
+      "Kiara has a rare combination of skills: sharp creative instinct paired with genuine proactivity. She didn't wait to be told what needed solving - she talked to clients, spotted friction points before anyone else did, and came back with original, well-considered solutions. I would rehire her without a second thought.",
     name: "Kimo Paula",
     role: "Settly",
     initials: "KP"
@@ -161,7 +161,7 @@ const TESTIMONIALS = [
   },
   {
     quote:
-      "Kiara demonstrated exceptional skill and professionalism. She effectively translated stakeholder requirements into outstanding user journeys — many of her interface designs were actually developed and became key customer journeys in the Discovery mobile app.",
+      "Kiara demonstrated exceptional skill and professionalism. She effectively translated stakeholder requirements into outstanding user journeys - many of her interface designs were actually developed and became key customer journeys in the Discovery mobile app.",
     name: "Shaylen Hira",
     role: "Senior Manager, Data Science & AI, Discovery",
     initials: "SH"
@@ -176,11 +176,11 @@ const TESTIMONIALS = [
 ];
 
 /*
- * Personal — edit freely. Shown in the About Me section.
+ * Personal - edit freely. Shown in the About Me section.
  */
 const EDUCATION = [
   {
-    period: "2014 — 2017",
+    period: "2014 - 2017",
     title: "Bachelor's Degree in Interaction Design",
     place: "The Open Window Institute, South Africa"
   }

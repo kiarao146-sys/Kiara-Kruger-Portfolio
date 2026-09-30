@@ -1,8 +1,8 @@
 /* =========================================================
-   Kiara Kruger — Case study template (project.html)
+   Kiara Kruger - Case study template (project.html)
    Reads ?slug=... and renders the matching entry from PROJECTS
    (assets/js/content.js). Add a new project there and its
-   detail page works immediately — no HTML edits needed.
+   detail page works immediately - no HTML edits needed.
 ========================================================= */
 (function () {
   "use strict";
@@ -47,7 +47,7 @@
           All work
         </a>
         <h1 class="case-title">Project not found</h1>
-        <p class="case-summary">This case study doesn't exist yet — head back to see the full list of work.</p>`;
+        <p class="case-summary">This case study doesn't exist yet - head back to see the full list of work.</p>`;
     }
     ["caseVisual", "resultsGrid", "caseResultsWrap"].forEach((id) => {
       const el = document.getElementById(id);
@@ -68,7 +68,7 @@
     const project = PROJECTS[index];
     if (project.href) { window.location.replace(project.href); return; }
 
-    document.title = `${project.title} — Kiara Kruger`;
+    document.title = `${project.title} - Kiara Kruger`;
 
     const tag = document.getElementById("caseTag");
     if (tag) tag.textContent = project.tag;
@@ -82,8 +82,8 @@
     const meta = document.getElementById("caseMeta");
     if (meta) {
       meta.innerHTML = `
-        <div class="case-meta-item"><span>Role</span><strong>${project.role || "—"}</strong></div>
-        <div class="case-meta-item"><span>Company</span><strong>${project.company || "—"}</strong></div>
+        <div class="case-meta-item"><span>Role</span><strong>${project.role || "-"}</strong></div>
+        <div class="case-meta-item"><span>Company</span><strong>${project.company || "-"}</strong></div>
         <div class="case-meta-item"><span>Timeline</span><strong>${project.period}</strong></div>`;
     }
 

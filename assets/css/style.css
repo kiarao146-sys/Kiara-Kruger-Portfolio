@@ -1,5 +1,5 @@
 /* =========================================================
-   Kiara Kruger — Portfolio
+   Kiara Kruger - Portfolio
    Dark, clean, modern. Static HTML/CSS/JS, no build step.
 ========================================================= */
 
@@ -140,7 +140,7 @@ body::before {
 }
 
 /* ---------- Interactive grid field ---------- */
-/* Scoped to whichever section contains it (Hero, Contact) — that
+/* Scoped to whichever section contains it (Hero, Contact) - that
    section needs position:relative + isolation:isolate. */
 .grid-field {
   position: absolute;

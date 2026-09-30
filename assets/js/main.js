@@ -1,5 +1,5 @@
 /* =========================================================
-   Kiara Kruger — Portfolio interactions
+   Kiara Kruger - Portfolio interactions
    Vanilla JS: reveals, marquee, tilt, cursor, clock, nav.
 ========================================================= */
 (function () {
