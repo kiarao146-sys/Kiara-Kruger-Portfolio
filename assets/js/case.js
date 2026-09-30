@@ -5,6 +5,14 @@
 (function () {
   "use strict";
 
+  /* Always open a case study at the top, even if the browser would restore
+     an earlier scroll position (reload, back/forward cache). */
+  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+  function toTop() { window.scrollTo({ top: 0, left: 0, behavior: "instant" }); }
+  toTop();
+  window.addEventListener("load", toTop);
+  window.addEventListener("pageshow", (e) => { if (e.persisted) toTop(); });
+
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   function initLightbox() {
