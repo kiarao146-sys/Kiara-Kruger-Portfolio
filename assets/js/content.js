@@ -32,7 +32,7 @@ const PROJECTS = [
     description:
       "Led end-to-end design across web and mobile for a B2B2C relocation platform, lifting mobile adoption from 31% to 81% and cutting vendor response times by 50%.",
     challenge:
-      "Settly's relocation platform serves three very different audiences through one product - HR teams managing relocations, internal operations teams delivering services, and relocating employees trying to get through a stressful move. The experience needed to feel simple for each of them without fragmenting into three separate products.",
+      "Settly runs three connected platforms - one for HR teams managing relocations, one for the internal hosts who run each move, and an app for relocating employees. Each needed to feel simple for its own users while working together as one system.",
     approach: [
       "Led end-to-end design across all three audiences - discovery, research, prototyping, testing and delivery.",
       "Redesigned key mobile and web journeys to lift adoption and reduce drop-off.",

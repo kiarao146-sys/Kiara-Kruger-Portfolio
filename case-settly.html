@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Settly Relocation Platform - Kiara Kruger</title>
-<meta name="description" content="Case study: three Settly projects - AI-assisted host messaging, centralised vendor communication and an employee app redesign that lifted mobile adoption from 31% to 81%." />
+<meta name="description" content="Case study: designing across Settly's three connected relocation platforms - AI-assisted host messaging, centralised vendor communication and an employee app redesign that lifted mobile adoption from 31% to 81%." />
 
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -78,19 +78,21 @@
       </a>
 
       <span class="project-tag" data-reveal style="--d:1">Settly · 2024 - Now</span>
-      <h1 class="case-title" data-reveal style="--d:2">One relocation platform, three very different users.</h1>
+      <h1 class="case-title" data-reveal style="--d:2">Three connected platforms, one relocation journey.</h1>
       <p class="case-summary" data-reveal style="--d:3">
-        I lead design for Settly's B2B2C relocation platform, used by HR teams, the hosts who manage
-        each move, and the employees relocating. Three projects show how that work cut manual effort,
-        halved vendor response times and more than doubled mobile adoption.
+        I lead design across Settly's B2B2C relocation product: a client platform for HR teams, an internal
+        platform for the hosts who run each move, and a mobile and web app for the employees relocating.
+        Each platform is built for its own user, but they work as one system. Three projects show how that
+        work cut manual effort, halved vendor response times and more than doubled mobile adoption.
       </p>
 
       <dl class="cs-facts" data-reveal style="--d:4">
         <div><dt>Role</dt><dd>Senior UX Designer</dd></div>
         <div><dt>Timeline</dt><dd>Oct 2024 - Now</dd></div>
-        <div><dt>Platform</dt><dd>Mobile &amp; web app, internal platform</dd></div>
+        <div><dt>Team</dt><dd>Product manager, engineers</dd></div>
+        <div><dt>Platforms</dt><dd>Client platform, host platform, employee mobile &amp; web app</dd></div>
         <div><dt>Industry</dt><dd>Relocation technology · HR</dd></div>
-        <div><dt>Tools</dt><dd>Figma, Mixpanel</dd></div>
+        <div><dt>Tools</dt><dd>Figma, Figma Make, Mixpanel, Hotjar, Claude, ChatGPT</dd></div>
       </dl>
     </div>
   </section>
@@ -128,14 +130,62 @@
     <div class="container">
       <div class="cs-head" data-reveal>
         <span class="eyebrow">Context</span>
-        <h2 class="cs-h2">Simple for each user, without becoming three products.</h2>
-        <p class="cs-body">Settly serves three audiences through one platform. Each needed an experience that felt simple for them, while the product stayed one connected system.</p>
+        <h2 class="cs-h2">Three platforms, each built for its user, working as one.</h2>
+        <p class="cs-body">Each of Settly's three audiences has its own platform, designed around what they need to do. Behind the scenes they are connected: when a client creates a new case, it is sent to the host platform, and hosts then guide and message the relocating employee through the employee app. A change in one platform affects the others, so every design decision had to work across the whole system.</p>
       </div>
       <div class="cs-grid4 cs-grid3" data-reveal>
-        <div class="cs-item"><h4>HR teams</h4><p>Manage their company's relocations and keep track of each employee's move.</p></div>
-        <div class="cs-item"><h4>Hosts</h4><p>Settly's operations team, who run each relocation case and coordinate employees and vendors.</p></div>
-        <div class="cs-item"><h4>Relocating employees</h4><p>Moving for work and trying to get through a stressful process with confidence.</p></div>
+        <div class="cs-item"><h4>Client platform · HR teams</h4><p>HR teams create new relocation cases, upload documents and action requests for their company's moves.</p></div>
+        <div class="cs-item"><h4>Host platform · Settly operations</h4><p>Hosts receive new cases, run each relocation and coordinate employees and vendors.</p></div>
+        <div class="cs-item"><h4>Employee app · Mobile &amp; web</h4><p>Relocating employees follow their move, complete tasks and get help through a stressful process.</p></div>
       </div>
+    </div>
+  </section>
+
+  <!-- ============ ROLE & CONSTRAINTS ============ -->
+  <section class="cs-block">
+    <div class="container cs-two">
+      <div data-reveal>
+        <span class="eyebrow">My role</span>
+        <h3 class="cs-h3">Leading design end to end, across all three platforms.</h3>
+        <p class="cs-body">I work in a cross-functional team with a product manager and engineers. I own the design process from discovery and research through prototyping, usability testing and delivery, and use Mixpanel data alongside interviews to find problems and measure results.</p>
+      </div>
+      <div data-reveal>
+        <span class="eyebrow">Constraints</span>
+        <h3 class="cs-h3">Limited time and technical constraints.</h3>
+        <p class="cs-body">We had to work within tight timelines and what was technically possible. That shaped how we worked: we split large problems into phases, tested early with hosts and users, and brought engineers into ideation so designs stayed buildable.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW I WORK (PROCESS) ============ -->
+  <style>
+    .cs-process { list-style: none; margin: 8px 0 0; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 24px; counter-reset: step; }
+    .cs-process li { position: relative; padding-top: 48px; counter-increment: step; }
+    .cs-process li::before { content: counter(step); position: absolute; top: 0; left: 0; width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; font-family: "Space Grotesk", sans-serif; font-size: 13px; font-weight: 600; color: var(--accent-2); border: 1px solid var(--accent-2); background: var(--bg, #0a0a0c); z-index: 1; }
+    .cs-process li:not(:last-child)::after { content: ""; position: absolute; top: 16px; left: 40px; right: -16px; height: 1px; background: linear-gradient(90deg, var(--accent-2), var(--border)); }
+    .cs-process h4 { margin: 0 0 8px; font-size: 15px; font-weight: 600; color: var(--text); line-height: 1.3; }
+    .cs-process p { margin: 0; font-size: 13px; line-height: 1.5; color: var(--text-muted); }
+    .cs-process p + p { margin-top: 6px; }
+    @media (max-width: 860px) {
+      .cs-process { grid-template-columns: 1fr; gap: 0; }
+      .cs-process li { padding: 4px 0 28px 52px; }
+      .cs-process li:last-child { padding-bottom: 0; }
+      .cs-process li:not(:last-child)::after { top: 40px; left: 16px; right: auto; bottom: 0; width: 1px; height: auto; background: linear-gradient(180deg, var(--accent-2), var(--border)); }
+    }
+  </style>
+  <section class="cs-block">
+    <div class="container">
+      <div class="cs-head" data-reveal>
+        <span class="eyebrow">My process</span>
+        <h2 class="cs-h2">A question-led process behind every project.</h2>
+      </div>
+      <ol class="cs-process" data-reveal>
+        <li><h4>Identify problems</h4><p>What goals do we want to achieve by solving this problem?</p></li>
+        <li><h4>Research &amp; discovery</h4><p>What data and evidence do we have? Are there themes?</p><p>Who can we talk to to understand more?</p></li>
+        <li><h4>Journey mapping</h4><p>What do we want this flow to look like?</p><p>Are there any gaps or restrictions?</p></li>
+        <li><h4>Ideation &amp; design</h4><p>What could this look like?</p></li>
+        <li><h4>Testing &amp; validating</h4><p>Does this solve our initial problem and meet our goals?</p><p>What do our users say? What do we need to change or add?</p></li>
+      </ol>
     </div>
   </section>
 
@@ -164,13 +214,64 @@
       <div class="cs-two cs-two--text" data-reveal>
         <div>
           <h3 class="cs-h3">The problem</h3>
-          <p class="cs-body">Hosts spent a lot of time writing repetitive messages to employees and vendors. Templates helped, but hosts still had to find the right one, then personalise and adapt it. Fully automated replies weren't the answer either: sensitive relocation cases need human judgement.</p>
+          <p class="cs-body">Hosts spent most of their time messaging users, and much of it was repetitive. Templates helped, but hosts still had to find the right one, then personalise and adapt it. Fully automated replies weren't the answer either: sensitive relocation cases need human judgement.</p>
         </div>
         <div>
+          <h3 class="cs-h3">How we found it</h3>
+          <p class="cs-body">Mixpanel tracked how many messages hosts sent and how long each took, and showed that messaging took up most of their time. Reading the messages themselves, we found hosts often repeated the same information to different users. We then ran sessions with hosts to learn what they struggled with and which questions they were asked most.</p>
+        </div>
+      </div>
+
+      <div class="cs-head cs-head--sub" data-reveal>
+        <h3 class="cs-h3">First version: three smart replies</h3>
+        <p class="cs-body">Our first release offered hosts three suggested replies to choose from. Hosts used it, but less than we hoped. Follow-up interviews showed three reasons why:</p>
+      </div>
+      <div class="cs-grid4 cs-grid3" data-reveal>
+        <div class="cs-item"><h4>Tone</h4><p>Every host has their own style of writing, and the suggestions didn't sound like them.</p></div>
+        <div class="cs-item"><h4>Accuracy</h4><p>Some suggestions weren't good or accurate enough to send.</p></div>
+        <div class="cs-item"><h4>Effort</h4><p>Reading and comparing three options added time and effort instead of saving it.</p></div>
+      </div>
+
+      <div class="cs-head cs-head--sub" data-reveal>
+        <h3 class="cs-h3">Iterating to one draft</h3>
+        <p class="cs-body">Over several rounds of interviews and usability testing, we addressed each issue. Engineers ran evals to improve answer accuracy, we added tone selection and a source view so hosts could check the information, and we simplified three options down to one draft.</p>
+      </div>
+      <article class="cs-ba" data-reveal>
+        <div class="cs-ai-pair">
+        <figure class="cs-media cs-media--bare">
+          <figcaption><strong>Before:</strong> three smart replies to choose from.</figcaption>
+          <img src="assets/media/settly/ai-before-smart-replies.webp" alt="Before: three smart reply chips titled positive, negative and general above an empty message field" loading="lazy" />
+        </figure>
+        <figure class="cs-media cs-media--bare">
+          <figcaption><strong>After:</strong> one draft prefilled in the message field, with sources and feedback.</figcaption>
+          <img src="assets/media/settly/ai-after-copilot.webp" alt="After: a Copilot suggestion prefilled in the message field with Sources (2), Tab to Confirm and thumbs up and down feedback" loading="lazy" />
+        </figure>
+        </div>
+        <style>
+          .cs-ai-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; align-items: start; }
+          .cs-ai-pair .cs-media + .cs-media { margin-top: 0; }
+          @media (max-width: 760px) { .cs-ai-pair { grid-template-columns: 1fr; gap: 24px; } }
+        </style>
+        <div class="cs-compare cs-spaced">
+          <ul class="cs-compare-before"><li>Three suggestions to read, compare and pick from</li><li>Generic tone that didn't match the host</li><li>Answers that weren't always accurate</li><li>No way to check where the information came from</li></ul>
+          <ul class="cs-compare-after"><li>One draft, prefilled in the message field to edit or send as is</li><li>Tone selection to match each host's style</li><li>Accuracy improved through engineering evals</li><li>A source view to validate every answer</li><li>Tab to confirm, with thumbs up or down feedback on every draft</li></ul>
+        </div>
+      </article>
+
+      <div class="cs-two cs-two--text cs-spaced" data-reveal>
+        <div>
           <h3 class="cs-h3">The solution</h3>
-          <p class="cs-body">We designed an AI assistant that writes one draft reply using details from the relocation case. Hosts stay in control: they can edit the draft or refine it with quick actions. We later extended the same interaction to vendor communication and other operational workflows.</p>
+          <p class="cs-body">An AI assistant writes one draft reply using details from the relocation case and places it directly in the message field. Hosts stay in control: they can send it as is, edit it, or refine it with quick actions. We later extended the same interaction to vendor communication and other operational workflows.</p>
           <ul class="cs-tags" aria-label="Refine actions">
             <li>Expand</li><li>Shorten</li><li>Deep Dive</li><li>Tone</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="cs-h3">Key decisions</h3>
+          <ul class="cs-learnings">
+            <li><strong>One draft, not three.</strong> Fewer choices meant less reading and a faster path to sending.</li>
+            <li><strong>Assist, don't automate.</strong> Hosts review every message, because relocation cases are personal and sensitive.</li>
+            <li><strong>Show the sources.</strong> Seeing where an answer came from helps hosts trust the draft and catch mistakes.</li>
           </ul>
         </div>
       </div>
@@ -198,19 +299,111 @@
       <div class="cs-two cs-two--text" data-reveal>
         <div>
           <h3 class="cs-h3">The problem</h3>
-          <p class="cs-body">Hosts talked to relocation vendors through external email inboxes. Conversations weren't linked to cases, vendor information was hard to find, and teams couldn't easily see whether a vendor had been contacted, sent a quote or confirmed a service.</p>
+          <p class="cs-body">Hosts talked to relocation vendors through external email inboxes. Conversations weren't linked to cases, vendor information was hard to find, and teams couldn't easily see whether a vendor had been contacted, sent a quote or confirmed a service. Stakeholders and the operations team had flagged it as a major pain point.</p>
         </div>
         <div>
+          <h3 class="cs-h3">Core problems</h3>
+          <ul class="cs-learnings">
+            <li><strong>No single source of truth.</strong> Messages were spread across personal inboxes, shared inboxes and vendor systems, with no unified view.</li>
+            <li><strong>Uncontrolled vendor behaviour.</strong> The system assumed vendors would reply to the same email alias, but nothing guided or enforced it.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cs-head cs-head--sub" data-reveal>
+        <h3 class="cs-h3">How we approached it</h3>
+        <p class="cs-body">Because we knew the problem was large, we did extensive research up front and then worked through the flow one phase at a time.</p>
+      </div>
+      <div class="cs-grid4 cs-grid3" data-reveal>
+        <div class="cs-item"><h4>1 · Problems &amp; goals</h4><p>Defined the problems and what success should look like.</p></div>
+        <div class="cs-item"><h4>2 · Current workflow</h4><p>Mapped how hosts and vendors actually communicated.</p></div>
+        <div class="cs-item"><h4>3 · Discovery questions</h4><p>Drafted the questions the research had to answer.</p></div>
+        <div class="cs-item"><h4>4 · Evidence</h4><p>Collected real host-vendor email threads and interviewed hosts about their pain points.</p></div>
+        <div class="cs-item"><h4>5 · Desired flow</h4><p>Mapped the future workflow end to end.</p></div>
+        <div class="cs-item"><h4>6 · Phased delivery</h4><p>Split the flow into phases. For each one: define the problem, run lightning demos and ideation, then get rounds of feedback from hosts and engineers before moving on.</p></div>
+      </div>
+
+      <div class="cs-head cs-head--sub" data-reveal>
+        <h3 class="cs-h3">Setting the goal: less time per case</h3>
+        <p class="cs-body">We started by asking the team to imagine three to six months ahead: what had we achieved for the business, and what was different from today? The answers came together around one goal: less time per case. That meant centralising vendor information, automating repetitive steps, and only involving hosts in vendor and client communication when they were really needed. Centralising the information also supported the longer-term strategy of feeding it into Settly's knowledge engine for future features.</p>
+      </div>
+      <figure class="cs-media cs-media--wide" data-reveal>
+        <img src="assets/media/settly/vendor-goal.webp" alt="Key goal workshop board: sticky notes on what success looks like in three to six months, centred on less time per case" loading="lazy" />
+        <figcaption>Key goal workshop: what success looks like three to six months from now.</figcaption>
+      </figure>
+
+      <div class="cs-ai-pair cs-spaced" data-reveal>
+      <figure class="cs-media">
+        <img src="assets/media/settly/vendor-problem-mapping.webp" alt="Initial problem mapping: a table of off-platform communication with vendors and clients, and flowcharts for a quote request and a support request with the slowest loops circled" loading="lazy" />
+        <figcaption>Initial problem mapping: what was communicated off-platform, and the current quote and support request flows. The circled loop is where back-and-forth with vendors could take up to two days.</figcaption>
+      </figure>
+      <figure class="cs-media">
+        <img src="assets/media/settly/vendor-discovery-questions.webp" alt="Discovery questions board: sticky notes from the team on scope, data, vendors, channels and user experience" loading="lazy" />
+        <figcaption>Discovery questions the research needed to answer, gathered with the team.</figcaption>
+      </figure>
+      </div>
+
+      <div class="cs-head cs-head--sub" data-reveal>
+        <h3 class="cs-h3">What the emails told us</h3>
+        <p class="cs-body">We analysed real host-vendor email threads, tagging every message by type. Most emails were purely operational: requests, confirmations and changes, with very little actual decision-making. The biggest sources of waste were vendors sending information in fragments, requirements not being captured upfront, and confirmations that could have been bundled with updates.</p>
+      </div>
+      <div class="cs-impact" data-reveal>
+        <span class="eyebrow">Key finding</span>
+        <div class="cs-stats">
+        <div class="cs-stat"><span class="cs-stat-num">~85%</span><span class="cs-stat-label">Of emails in a temporary accommodation thread were operational</span></div>
+        <div class="cs-stat"><span class="cs-stat-num">~72%</span><span class="cs-stat-label">Of a travel booking thread was requests, confirmations and changes</span></div>
+        </div>
+      </div>
+      <figure class="cs-media cs-media--wide cs-spaced" data-reveal>
+        <img src="assets/media/settly/vendor-email-analysis.webp" alt="Email thread analysis for temporary accommodation and travel booking: the share of requests, confirmations, acknowledgements and change requests, with pain points and patterns" loading="lazy" />
+        <figcaption>Email thread analysis: breaking each thread down by message type showed where the back-and-forth came from.</figcaption>
+      </figure>
+
+      <div class="cs-head cs-head--sub" data-reveal>
+        <h3 class="cs-h3">Mapping the desired flow</h3>
+        <p class="cs-body">We mapped the future flow for each service, showing who acts at each step (user, host or vendor) and through which channel. Each flow was split into phases, such as criteria validation, vendor engagement, user approval, and booking and confirmation. We then designed and tested one phase at a time.</p>
+      </div>
+      <div class="cs-ai-pair" data-reveal>
+      <figure class="cs-media">
+        <img src="assets/media/settly/vendor-flow-accommodation.webp" alt="Desired flow for temporary accommodation across four phases, from service chat created to sharing the booking confirmation, with a change request iteration loop" loading="lazy" />
+        <figcaption>Temporary accommodation: the desired flow across four phases, including the change request loop.</figcaption>
+      </figure>
+      <figure class="cs-media">
+        <img src="assets/media/settly/vendor-flow-shipping.webp" alt="Desired flow for shipping of goods across service initiation, vendor takeover and quote approval" loading="lazy" />
+        <figcaption>Shipping of goods: service initiation, vendor takeover and quote approval.</figcaption>
+      </figure>
+      </div>
+
+      <div class="cs-head cs-head--sub" data-reveal>
+        <h3 class="cs-h3">Challenges along the way</h3>
+      </div>
+      <div class="cs-grid2" data-reveal>
+        <div class="cs-item"><h4>Many contacts per vendor</h4><p>A single vendor often had several contacts, each with a different email address.</p></div>
+        <div class="cs-item"><h4>Bringing email in-house</h4><p>Everything had lived outside the platform, so existing email threads had to be integrated and imported.</p></div>
+        <div class="cs-item"><h4>New email addresses</h4><p>Moving to unique Settly email addresses meant clearly communicating the change to clients.</p></div>
+        <div class="cs-item"><h4>Broken threads</h4><p>Vendors often started new email threads instead of replying, which made it hard to keep conversations connected to the right case.</p></div>
+      </div>
+
+      <div class="cs-two cs-two--text cs-spaced" data-reveal>
+        <div>
           <h3 class="cs-h3">The solution</h3>
-          <p class="cs-body">We brought vendor search and communication into Settly's internal platform. Hosts can search and filter vendors by what the case needs, email them from a case-specific address, use templates, and track every request by status.</p>
+          <p class="cs-body">We brought vendor search and communication into Settly's host platform. Hosts can search and filter vendors by what the case needs, email them from a case-specific address, use templates, and track every request by status.</p>
+        </div>
+        <div>
+          <h3 class="cs-h3">Request statuses</h3>
+          <p class="cs-body">Every vendor request has a clear status, so the whole team can see where things stand.</p>
           <ol class="cs-status" aria-label="Request statuses">
             <li>Contacted</li><li>Quotation requested</li><li>Confirmed</li>
           </ol>
         </div>
       </div>
-      <figure class="cs-media" data-reveal>
+      <figure class="cs-media cs-media--wide" data-reveal>
         <img src="assets/media/settly/vendors.webp" alt="Vendor communication: an email thread linked to the case, vendor search filtered by country and service, and request statuses such as Pending and Confirmed" loading="lazy" />
         <figcaption>Vendor search, case-linked email threads and request statuses in one place.</figcaption>
+      </figure>
+      <figure class="cs-media cs-spaced" data-reveal>
+        <img src="assets/media/settly/vendor-inbox.webp" alt="Host platform with a Vendors inbox tab: a case-linked email thread with a vendor, a case-specific sending address, templates, file sharing and Help me write, beside the employee profile with confirmed vendors for housing, travel and shipping" loading="lazy" />
+        <figcaption>The vendor inbox in the host platform. Each email thread is linked to a case and sent from a case-specific address. Hosts can use templates, share files or ask AI to help write, and can see every vendor's status next to the employee's profile.</figcaption>
       </figure>
       <div class="cs-impact" data-reveal>
         <span class="eyebrow">Impact</span>
@@ -231,12 +424,22 @@
       </div>
       <div class="cs-two cs-two--text" data-reveal>
         <div>
-          <h3 class="cs-h3">The problem</h3>
-          <p class="cs-body">Relocating employees struggled to see their overall progress, what needed their attention and what would happen next. Tasks, guidance and service information were spread across the product, which made the mobile app less useful and pushed employees to ask their host instead.</p>
+          <h3 class="cs-h3">How it started</h3>
+          <p class="cs-body">This project grew out of our research into host messaging. The same questions kept coming up, which told us employees weren't being informed well enough by the app. If the app were clearer and easier to use, employees could help themselves instead of messaging their host.</p>
         </div>
         <div>
-          <h3 class="cs-h3">The solution</h3>
-          <p class="cs-body">We redesigned the dashboard, checklist and key mobile and web journeys around three questions. The new experience puts upcoming actions first, surfaces relevant guidance and links tasks, services and self-service content more clearly.</p>
+          <h3 class="cs-h3">The problem</h3>
+          <p class="cs-body">Employees struggled to see their overall progress, what needed their attention and what would happen next. Tasks, guidance and service information were spread across the product. The mobile app was also buggy and hard to use, so most employees used the desktop version instead.</p>
+        </div>
+      </div>
+
+      <div class="cs-two cs-two--text cs-spaced" data-reveal>
+        <div>
+          <h3 class="cs-h3">Rethinking the whole app</h3>
+          <p class="cs-body">We reviewed every flow and feature. Instead of fixing screens one at a time, we decided to redesign the entire app so the experience would be consistent. We grouped the messages employees sent to hosts by theme, and three questions came up again and again. They became the basis of the redesign.</p>
+        </div>
+        <div>
+          <h3 class="cs-h3">Three questions</h3>
           <ol class="cs-questions">
             <li>What is happening?</li>
             <li>What do I need to do next?</li>
@@ -244,14 +447,62 @@
           </ol>
         </div>
       </div>
-      <figure class="cs-media" data-reveal>
+
+      <div class="cs-two cs-two--text cs-spaced" data-reveal>
+        <div>
+          <h3 class="cs-h3">The solution</h3>
+          <p class="cs-body">We redesigned the dashboard, checklist and key mobile and web journeys. Information now appears at the right time, based on the employee's stage of relocation, with articles relevant to that stage. Upcoming actions come first, and everything an employee needs is on their dashboard.</p>
+        </div>
+        <div>
+          <h3 class="cs-h3">Testing</h3>
+          <p class="cs-body">We tested each iteration with relocating employees and with internal staff who had little experience of the app, giving us fresh eyes on whether it was easy to understand.</p>
+        </div>
+      </div>
+      <div class="cs-head cs-head--sub" data-reveal>
+        <h3 class="cs-h3">Before and after</h3>
+        <p class="cs-body">The old app was buggy and hard to use, so employees fell back on the desktop version and messaged their host for answers. The redesign reworked every key journey around what the employee needs at their current stage.</p>
+      </div>
+
+      <article class="cs-ba" data-reveal>
+        <figure class="cs-media cs-media--bare">
+          <img style="max-width:920px;margin:0 auto" src="assets/media/settly/app-ba-dashboard.webp" alt="Before: a home screen with a welcome message, article cards and coloured task tiles. After: a dashboard with updates, onboarding progress with the next call, and upcoming events" loading="lazy" />
+        </figure>
+        <h3 class="cs-h3"><span class="cs-ba-num">01</span> Home dashboard</h3>
+        <div class="cs-compare">
+          <ul class="cs-compare-before"><li>Articles came first, before anything the employee had to do</li><li>Tasks were colour tiles with no status or context</li><li>No overview of progress or what was coming up</li></ul>
+          <ul class="cs-compare-after"><li>Updates and requested files at the top</li><li>Current stage with progress and the next step, such as an onboarding call</li><li>Upcoming events with date, time and location</li></ul>
+        </div>
+      </article>
+
+      <article class="cs-ba" data-reveal>
+        <figure class="cs-media cs-media--bare">
+          <img style="max-width:920px;margin:0 auto" src="assets/media/settly/app-ba-checklist.webp" alt="Before: a checklist of large brightly coloured category cards showing only the next item. After: overall relocation journey progress and an expandable checklist with a timeline of completed steps and dates" loading="lazy" />
+        </figure>
+        <h3 class="cs-h3"><span class="cs-ba-num">02</span> Checklist</h3>
+        <div class="cs-compare">
+          <ul class="cs-compare-before"><li>Large, bright cards that were hard to scan</li><li>Only the next item in each category was visible</li><li>No sense of overall progress</li></ul>
+          <ul class="cs-compare-after"><li>Overall relocation journey progress at the top</li><li>Expandable categories with every step in a timeline</li><li>Completed steps show when they were done</li></ul>
+        </div>
+      </article>
+
+      <article class="cs-ba" data-reveal>
+        <figure class="cs-media cs-media--bare">
+          <img style="max-width:920px;margin:0 auto" src="assets/media/settly/app-ba-articles.webp" alt="Before: an All articles list of large image cards filtered by tabs. After: a Guide screen with search, your reads with category tags and read times, and browse by category" loading="lazy" />
+        </figure>
+        <h3 class="cs-h3"><span class="cs-ba-num">03</span> Articles to Guide</h3>
+        <div class="cs-compare">
+          <ul class="cs-compare-before"><li>A long feed of large image cards</li><li>No search: only scrolling or tabs</li><li>Little information about each article</li></ul>
+          <ul class="cs-compare-after"><li>Search first: "How can we help you?"</li><li>"Your reads" with category tags and read times</li><li>Browse all categories for self-service</li></ul>
+        </div>
+      </article>
+      <figure class="cs-media cs-spaced" data-reveal>
         <img src="assets/media/settly/dashboard.webp" alt="Employee app and web dashboard: next steps, updates, onboarding checklist, upcoming events, knowledge hub and house search" loading="lazy" />
         <figcaption>The redesigned dashboard leads with next steps, updates and upcoming events, on mobile and web.</figcaption>
       </figure>
       <div class="cs-impact" data-reveal>
         <span class="eyebrow">Impact</span>
         <div class="cs-stats cs-stats--single">
-          <div class="cs-stat"><span class="cs-stat-num">31% → 81%</span><span class="cs-stat-label">Mobile adoption</span></div>
+          <div class="cs-stat"><span class="cs-stat-num">31% → 81%</span><span class="cs-stat-label">Mobile adoption in about 6 to 8 months, driven by a more reliable, easier app</span></div>
         </div>
       </div>
     </div>
@@ -269,6 +520,24 @@
         <div class="cs-stat"><span class="cs-stat-num">50%</span><span class="cs-stat-label">Faster median vendor response</span></div>
         <div class="cs-stat"><span class="cs-stat-num">40%</span><span class="cs-stat-label">Increase in user retention</span></div>
         <div class="cs-stat"><span class="cs-stat-num">~30%</span><span class="cs-stat-label">Of host messages drafted with AI</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LEARNINGS ============ -->
+  <section class="cs-block">
+    <div class="container cs-two">
+      <div data-reveal>
+        <span class="eyebrow">What I learned</span>
+        <h2 class="cs-h2">Lessons from designing a connected system.</h2>
+      </div>
+      <div data-reveal>
+        <ul class="cs-learnings">
+          <li><strong>One problem can reveal another.</strong> Researching host messaging showed us why employees needed help in the first place, and that led to the app redesign.</li>
+          <li><strong>More options aren't always better.</strong> Three AI suggestions created more work. One good, editable draft got used.</li>
+          <li><strong>Not every planned feature earns its place.</strong> When the evidence showed that something on the roadmap wouldn't make a real difference for users, it was better to pause or shelve it early and put our time into the work that would.</li>
+          <li><strong>Break big problems into phases.</strong> Working through vendor communication one phase at a time, with hosts and engineers involved throughout, kept a complex project manageable.</li>
+        </ul>
       </div>
     </div>
   </section>
